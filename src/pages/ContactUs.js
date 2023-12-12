@@ -1,5 +1,6 @@
 import React, {useState}  from 'react';
 import 'tailwindcss/tailwind.css';
+import { Link } from "@react-email/link";
 
 const ContactUs = () => {
 
@@ -18,7 +19,7 @@ const ContactUs = () => {
       <h1 className="text-4xl font-bold mb-6 text-pijet-blue">CONTACT US</h1>
       
       <p className="text-lg text-xl mb-4">
-        Please use this form for general inquiries or management-related problems. For any issues related to manuscripts, please email pijet@pict.edu along with your manuscript ID for publication-related queries.
+        Please use this form for general inquiries or management-related problems. For any issues related to manuscripts, please email <Link href="mailto:pijet@pict.edu">pijet@pict.edu</Link> along with your manuscript ID for publication-related queries.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4 py-5">

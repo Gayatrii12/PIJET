@@ -5,7 +5,6 @@ function Ourteam() {
         <h2 class="my-6 text-4xl tracking-tight font-extrabold text-pijet-blue">
           Chief Editor
         </h2>
-        {/* <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Team of editorial board members of PIJET</p> */}
       </div>
       <div class="grid gap-8 lg:gap-16 sm:grid-cols-21 md:grid-cols-1 lg:grid-cols-1">
         <div class="text-center text-gray-500 dark:text-gray-400">
@@ -179,13 +178,10 @@ function Ourteam() {
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
-            Coordinators
+            Journal Coordinator
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Team of Coordinators of PIJET
-          </p>
         </div>
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
+        <div class="grid gap-8 lg:gap-16 sm:grid-cols-21 md:grid-cols-1 lg:grid-cols-1">
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
@@ -197,7 +193,7 @@ function Ourteam() {
             <p>Associate Prof.</p>
             <p>PICT, Pune</p>
           </div>
-          <div class="text-center text-gray-500 dark:text-gray-400">
+          {/* <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrMousamiMunot.jpg"
@@ -207,7 +203,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof. & Head, Dept. of E&TE</p>
             <p>PICT, Pune</p>
-          </div>
+          </div> */}
         </div>
       </div>  
     </section>

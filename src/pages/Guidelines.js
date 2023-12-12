@@ -1,5 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
+import { Link } from "@react-email/link"; 
 
 const Guidelines = () => {
     return (
@@ -7,7 +8,7 @@ const Guidelines = () => {
             <div className="py-4">
                 <h1 className="text-4xl font-bold mb-4 text-pijet-blue text-center py-4">AUTHOR GUIDELINES</h1>
                 <div className="mb-8">
-                    <li className="text-xl"><strong className="text-xl font-bold mb-2">Submission Details: </strong> Submit your manuscript as a doc/pdf to:  pijet@pict.edu.</li>
+                    <li className="text-xl"><strong className="text-xl font-bold mb-2">Submission Details: </strong> Submit your manuscript as a doc/pdf to: <Link href="mailto:pijet@pict.edu">pijet@pict.edu</Link></li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Formatting Requirements: </strong>
                         Use Times New Roman, Font Size 15 for the main title. Subtitles should be in Bold with Font Size 10, and the body in Font Size 10. The manuscript should be limited to 6 pages.</li>
@@ -16,7 +17,7 @@ const Guidelines = () => {
                         All paragraphs should be justified, in a single column, with single-line spacing. Organize your content into Heading, Abstract, Keywords, Introduction, Materials and Methods, Results and Discussion, Conclusion, Acknowledgment, and References.</li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Visual Elements: </strong>
-                        Include tables and pictures in JPEG format with high resolution.</li>
+                        Include tables and pictures in JPEG format with high resolution. Strictly avoid any type of copy paste from the Internet or other sources. Redraw new/different figures with minimum 300 DPI resolution and then insert in the manuscript.</li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Competing Interests: </strong>
                         Authors should declare any competing interests.</li>

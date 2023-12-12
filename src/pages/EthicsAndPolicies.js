@@ -22,7 +22,7 @@ const EthicsAndPolicies = () => {
       <h1 className="text-4xl font-bold mb-4 text-pijet-blue">PIJET Ethics and Policies Code</h1>
 
       <p className="mb-6 text-xl">
-        At PICT's International Journal on Engineering and Technology (PIJET), we are committed to upholding
+        At PICT's International Journal of Engineering and Technology (PIJET), we are committed to upholding
         the highest standards of ethical conduct in the field of computing and engineering. Our Ethics and Policies
         Code serves as a guiding framework to ensure transparency, integrity, and fairness in all aspects of the
         publication process.
@@ -38,7 +38,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('researchMisconduct')}
         >
-          1. Research Misconduct 
+          1. Research Misconduct
           <FontAwesomeIcon
             icon={getArrowIcon('researchMisconduct')}
             className="ml-2"
@@ -48,7 +48,7 @@ const EthicsAndPolicies = () => {
           <>
             <p className="mb-2 text-xl">
               Authors submitting to PIJET are expected to present their research results honestly,
-              refraining from fabricating, falsifying, or selectively reporting data to mislead or deceive.
+              refraining from fabricating, falsifying, or selectively reporting data to mislead or deceive. Strictly avoid any type of copy paste from the Internet or other sources. For previously published figures, take the permission from the owner(s) for both the print and online format. PIJET publisher will not be responsible for any refund or any costs for the same.
             </p>
             <p className="mb-2 text-xl">
               Maintaining the integrity of the data is crucial, and theft of data or research results from others
