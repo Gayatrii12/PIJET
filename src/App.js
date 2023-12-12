@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 import EthicsAndPolicies from './pages/EthicsAndPolicies';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-      <EthicsAndPolicies/>
+        <Navbar/>
+        <EthicsAndPolicies/>
     </div>
   );
 }
