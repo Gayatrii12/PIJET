@@ -13,7 +13,7 @@ const HomePage = () => {
                 </div>
                 <div className="w-1/2 px-3 py-8">
                     {/* Text to the right of the image */}
-                    <div className="text-lg text-l">
+                    <div className="text-xl text-left">
                         <p>
                             <strong>Journal Information:</strong>
                         </p>

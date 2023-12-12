@@ -6,7 +6,7 @@ import {Outlet, Link} from "react-router-dom";
             <div class=" navbar-wrapper items-center text-white text-xl justify-center h-16 w-100% p-15 shadow-md  bg-pijet-blue">
                 <div class=" w-100%   h-10">
                     <ul class="flex space-x-10 items-center py-4 justify-evenly text-white" >
-                        <Link to="/home">
+                        <Link to="/">
                             <li class="font-manrope font-medium text-md text-white hover:scale-110">HOME</li>
                         </Link>
                         <Link to="/guideline">
@@ -17,6 +17,9 @@ import {Outlet, Link} from "react-router-dom";
                         </Link>
                         <Link to="/editorial-board">
                             <li class="font-manrope font-medium text-md text-white hover:scale-110">EDITORIAL BOARD</li>
+                        </Link>
+                        <Link to="/archives">
+                            <li class="font-manrope font-medium text-md text-white hover:scale-110">ARCHIVES</li>
                         </Link>
                         <Link to="/ethics-policies">
                             <li class="font-manrope font-medium text-md text-white hover:scale-110">ETHICS & POLICIES</li>
