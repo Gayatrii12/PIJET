@@ -1,6 +1,9 @@
 
 import './App.css';
 import EthicsAndPolicies from './pages/EthicsAndPolicies';
+import HomePage from './pages/HomePage';
+import Guidelines from './pages/Guidelines';
+import ContactUs from './pages/ContactUs';
 import Navbar from './components/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Ourteam from './pages/our-team';
@@ -20,6 +23,7 @@ function App() {
                 <Route path="contact-us" element={<EthicsAndPolicies/>}/>    
             </Routes>
         </BrowserRouter>
+        <ContactUs/>
     </div>
   );
 }

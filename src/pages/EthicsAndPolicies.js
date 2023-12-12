@@ -18,7 +18,7 @@ const EthicsAndPolicies = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 text-justify">
+    <div className="max-w-7xl mx-auto p-6 text-justify">
       <h1 className="text-4xl font-bold mb-4 text-pijet-blue">PIJET Ethics and Policies Code</h1>
 
       <p className="mb-6 text-xl">
@@ -31,7 +31,6 @@ const EthicsAndPolicies = () => {
       <p className="mb-6 text-xl">
         We invite authors, reviewers, and readers to familiarize themselves with our ethical principles outlined below.
         The content is organized into sections for easy navigation, and each topic is presented in an expandable format.
-        <br/><br/><b>Click on the headings to explore specific policies and guidelines in detail.</b>
       </p>
 
       <div className="mb-6">
@@ -39,7 +38,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('researchMisconduct')}
         >
-          Research Misconduct 
+          1. Research Misconduct 
           <FontAwesomeIcon
             icon={getArrowIcon('researchMisconduct')}
             className="ml-2"
@@ -66,7 +65,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('authorship')}
         >
-          Authorship
+          2. Authorship
           <FontAwesomeIcon
             icon={getArrowIcon('authorship')}
             className="ml-2"
@@ -92,7 +91,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('competingInterests')}
         >
-          Competing Interests
+          3. Competing Interests
           <FontAwesomeIcon
             icon={getArrowIcon('competingInterests')}
             className="ml-2"
@@ -114,7 +113,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('peerReview')}
         >
-          Peer Review
+          4. Peer Review
           <FontAwesomeIcon
             icon={getArrowIcon('peerReview')}
             className="ml-2"
@@ -138,7 +137,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('recommendedCitations')}
         >
-          Recommended Citations in Peer Review
+          5. Recommended Citations in Peer Review
           <FontAwesomeIcon
             icon={getArrowIcon('recommendedCitations')}
             className="ml-2"
@@ -160,7 +159,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('plagiarism')}
         >
-          Plagiarism
+          6. Plagiarism
           <FontAwesomeIcon
             icon={getArrowIcon('plagiarism')}
             className="ml-2"
@@ -181,7 +180,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('duplicateSubmission')}
         >
-          Duplicate Submission
+          7. Duplicate Submission
           <FontAwesomeIcon
             icon={getArrowIcon('duplicateSubmission')}
             className="ml-2"
@@ -202,7 +201,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('correctionsRetractions')}
         >
-          Corrections and Retractions
+          8. Corrections and Retractions
           <FontAwesomeIcon
             icon={getArrowIcon('correctionsRetractions')}
             className="ml-2"
@@ -224,7 +223,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('handlingResearchMisconduct')}
         >
-          Handling Research Misconduct
+          9. Handling Research Misconduct
           <FontAwesomeIcon
             icon={getArrowIcon('handlingResearchMisconduct')}
             className="ml-2"
@@ -246,7 +245,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('dataSharing')}
         >
-          Data Sharing
+          10. Data Sharing
           <FontAwesomeIcon
             icon={getArrowIcon('dataSharing')}
             className="ml-2"
@@ -268,7 +267,7 @@ const EthicsAndPolicies = () => {
           className="text-3xl font-bold mb-2 cursor-pointer text-pijet-blue"
           onClick={() => toggleSection('submissions')}
         >
-          Submissions
+          11. Submissions
           <FontAwesomeIcon
             icon={getArrowIcon('submissions')}
             className="ml-2"
