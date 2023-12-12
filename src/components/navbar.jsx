@@ -10,6 +10,7 @@
                         <li class="font-manrope font-medium text-md text-white hover:text-gray-900">GUIDELINES</li>
                         <li class="font-manrope font-medium text-md text-white hover:text-gray-900">CALL FOR PAPERS</li>
                         <li class="font-manrope font-medium text-md text-white hover:text-gray-900">EDITORIAL BOARD</li>
+                        <li class="font-manrope font-medium text-md text-white hover:text-gray-900">ARCHIVES</li>
                         <li class="font-manrope font-medium text-md text-white hover:text-gray-900">ETHICS & POLICIES</li>
                         <li class="font-manrope font-medium text-md text-white hover:text-gray-900">CONTACT US</li>
                     </ul>

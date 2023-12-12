@@ -13,7 +13,7 @@ const HomePage = () => {
                 </div>
                 <div className="w-1/2 px-3 py-8">
                     {/* Text to the right of the image */}
-                    <div className="text-lg">
+                    <div className="text-lg text-l">
                         <p>
                             <strong>Journal Information:</strong>
                         </p>
@@ -46,9 +46,7 @@ const HomePage = () => {
             <div className="py-5">
                 <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3">Journal Particulars</h1>
 
-                <p className="mb-2 text-xl">
-                    Need to insert table here
-                </p>
+                <img src="/home_page_table.png" alt="Static Image" className="w-full h-auto" />
             </div>
 
             <div className="py-5">
