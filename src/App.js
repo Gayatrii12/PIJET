@@ -15,12 +15,13 @@ function App() {
         <BrowserRouter>
         <Navbar/>
             <Routes> 
-                <Route path="" element={<EthicsAndPolicies/>}/>    
-                <Route path="guideline" element={<EthicsAndPolicies/>}/>    
+                <Route path="" element={<HomePage/>}/>    
+                <Route path="guideline" element={<Guidelines/>}/>    
                 <Route path="cfa" element={<EthicsAndPolicies/>}/>    
                 <Route path="editorial-board" element={<Ourteam/>}/>    
                 <Route path="ethics-policies" element={<EthicsAndPolicies/>}/>    
-                <Route path="contact-us" element={<EthicsAndPolicies/>}/>    
+                <Route path="archives" element={<EthicsAndPolicies/>}/>    
+                <Route path="contact-us" element={<ContactUs/>}/>    
             </Routes>
         </BrowserRouter>
         <ContactUs/>
