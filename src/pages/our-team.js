@@ -33,7 +33,7 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+              src="/DrAGKeskar.jpg"
               alt="Bonnie Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -45,7 +45,7 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
+              src="/DROGKakade.jpg"
               alt="Helene Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -57,7 +57,7 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+              src="/DrManeshKokare.jpeg"
               alt="Jese Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -69,7 +69,7 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+              src="/DrMaheshkumarKolekar.jpeg"
               alt="Joseph Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -81,7 +81,7 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+              src="/DrRadhikaJain.jpg"
               alt="Sofia Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -94,7 +94,7 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
+              src="/DrNupoorRanade.jpg"
               alt="Leslie Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -118,55 +118,55 @@ function Ourteam() {
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+              src="/DrAmolPotgantwar.png"
               alt="Bonnie Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              <a href="#">Bonnie Green</a>
+              <a href="#">Dr. Amol G. Potgantwar</a>
             </h3>
             <p>CEO/Co-founder</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
+              src="/DrOmkarSureshVaidya.jpeg"
               alt="Helene Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              <a href="#">Helene Engels</a>
+              <a href="#">Dr. Omkar Suresh Vaidya</a>
             </h3>
             <p>CTO/Co-founder</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+              src="/DrJayshreePansare.jpeg"
               alt="Jese Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              <a href="#">Jese Leos</a>
+              <a href="#">Dr. Jayshree Pansare</a>
             </h3>
             <p>SEO & Marketing</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+              src="/DrSwatiBhavsar.jpg"
               alt="Joseph Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              <a href="#">Joseph Mcfall</a>
+              <a href="#">Dr. Swati Bhavsar</a>
             </h3>
             <p>Sales</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
               class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+              src="/DrVarshaHarpale.jpg"
               alt="Sofia Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              <a href="#">Lana Byrd</a>
+              <a href="#">Dr. Varsha Harpale</a>
             </h3>
             <p>Web Designer</p>
           </div>
@@ -177,7 +177,7 @@ function Ourteam() {
               alt="Leslie Avatar"
             />
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              <a href="#">Leslie Livingston</a>
+              <a href="#">Dr. Vrushali Mendre</a>
             </h3>
             <p>Graphic Designer</p>
           </div>
