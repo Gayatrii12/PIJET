@@ -34,7 +34,7 @@ const HomePage = () => {
                         <br/>
                         <div className="flex text-s justify-evenly">
                             <p><a href="/PIJET_COPYRIGHT.pdf" className="text-blue-500">Copyright Form</a></p>
-                            <p><a href="/guideline" className="text-blue-500">Registration Form</a></p>
+                            <p><a href="/register" className="text-blue-500">Registration Form</a></p>
                             <p><a href="/Sample_Manuscript_PIJET.docx" className="text-blue-500">Sample Manuscript</a></p>
                         </div>
                     </div>

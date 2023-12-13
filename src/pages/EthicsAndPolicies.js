@@ -168,8 +168,14 @@ const EthicsAndPolicies = () => {
         {expandedSections['plagiarism'] && (
           <>
             <p className="mb-2 text-xl">
+              <strong>1. Text Plagiarism and AI-Generated Text:</strong> Authors are allowed a maximum tolerance of 10% for text plagiarism and 10% for AI-generated text. It is crucial that the remaining 90% of the content is original and not sourced from external materials.
+              <br />
+              <br />
+              <strong>2. Previously Published Figures:</strong> Authors must secure explicit permission from the rightful owner(s) for both print and online formats before incorporating any previously published figures. Direct copying from the internet or other sources is strictly prohibited. PIJET publisher disclaims any responsibility for associated costs. Authors are required to redraw figures with a resolution of 300 DPI and insert them into the paper.
+              <br />
+              <br />
               PIJET strictly prohibits plagiarism and self-plagiarism. Authors are expected to submit original work, and
-              the journal employs tools such as CrossCheck to identify and address any instances of plagiarism.
+              the journal employs various tools to identify and address any instances of plagiarism.
             </p>
           </>
         )}

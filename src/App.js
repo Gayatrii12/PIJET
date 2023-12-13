@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Ourteam from './pages/our-team';
 import Archive from './pages/Archive';
 import CallForPapers from './pages/CallForPapers';
+import Register from './pages/Register';
 function App() {
   return (
     
@@ -25,7 +26,8 @@ function App() {
                 <Route path="editorial-board" element={<Ourteam/>}/>    
                 <Route path="ethics-policies" element={<EthicsAndPolicies/>}/>    
                 <Route path="archives" element={<Archive/>}/>    
-                <Route path="contact-us" element={<ContactUs/>}/>    
+                <Route path="contact-us" element={<ContactUs/>}/>
+                <Route path="register" element={<Register/>}/>   
             </Routes>
         </BrowserRouter>
       </ThemeProvider> 
