@@ -12,7 +12,7 @@ import {Outlet, Link} from "react-router-dom";
                         <Link to="/guideline">
                             <li class="font-manrope font-medium text-md text-white hover:scale-110 ease-out duration-2git 00">GUIDELINES</li>
                         </Link>
-                        <Link to="/cfa">
+                        <Link to="/call-for-papers">
                             <li class="font-manrope font-medium text-md text-white hover:scale-110 ease-out duration-2git 00">CALL FOR PAPERS</li>
                         </Link>
                         <Link to="/editorial-board">

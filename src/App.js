@@ -10,6 +10,7 @@ import Navbar from './components/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Ourteam from './pages/our-team';
 import Archive from './pages/Archive';
+import CallForPapers from './pages/CallForPapers';
 function App() {
   return (
     
@@ -18,10 +19,9 @@ function App() {
         <BrowserRouter>
         <Navbar/>
             <Routes>
-              
                 <Route path="" element={<HomePage/>}/>    
                 <Route path="guideline" element={<Guidelines/>}/>    
-                <Route path="cfa" element={<EthicsAndPolicies/>}/>    
+                <Route path="call-for-papers" element={<CallForPapers/>}/>    
                 <Route path="editorial-board" element={<Ourteam/>}/>    
                 <Route path="ethics-policies" element={<EthicsAndPolicies/>}/>    
                 <Route path="archives" element={<Archive/>}/>    
