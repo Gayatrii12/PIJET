@@ -13,18 +13,18 @@ const Archive = () => {
   };
 
   const volumes = [
-    // { id: 1, year: 2023, volume: 'Volume 1', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
-    // { id: 1, year: 2023, volume: 'Volume 1', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
-    // { id: 1, year: 2023, volume: 'Volume 1', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
-    // { id: 1, year: 2023, volume: 'Volume 1', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
-    // { id: 1, year: 2023, volume: 'Volume 1', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
+    // { id: 1, year: 2023, volume: 'Volume 2', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
+    // { id: 1, year: 2023, volume: 'Volume 3', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
+    // { id: 1, year: 2023, volume: 'Volume 4', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
+    // { id: 1, year: 2023, volume: 'Volume 5', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
+    // { id: 1, year: 2023, volume: 'Volume 6', issues: ['Issue 1 : December 2023', 'Issue 2 : Accepting Papers!'] },
   ];
 
 
   return (
     <div className="py-10 h-100">
       <div className="py-6">
-        <h1 className="text-4xl font-bold mb-4 py-8 text-pijet-blue">PRESENT ISSUES</h1>
+        <h1 className="text-4xl font-bold mb-4 py-8 text-pijet-blue">PRESENT ISSUE</h1>
         <div className="flex-col items-center justify-center mx-auto bg-pijet-blue border text-xl border-gray-200 rounded-lg shadow md:flex-col md:max-w-md">
           <div
             className="cursor-pointer"

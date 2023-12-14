@@ -56,7 +56,7 @@ const Register = () => {
     <>
       <div className="default-text-block main_box_papermsg">
         <h2 className="my-6 text-4xl tracking-tight font-extrabold text-pijet-blue py-10">
-          Register your manuscript for publication:
+          Submit your manuscript:
         </h2>
       </div>
       <form className="w-full max-w-lg mx-auto my-8">
@@ -66,7 +66,7 @@ const Register = () => {
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="upcoming-volume"
             >
-              Upcoming Volume
+              Prospective Volume
             </label>
             <div className="relative">
               <select
@@ -76,7 +76,7 @@ const Register = () => {
                 id="upcoming-volume"
               >
                 <option value="" disabled>
-                  Select Upcoming Volume
+                  Select Volume and Issue
                 </option>
                 {volumesList.map((volume, index) => (
                   <option key={index} value={volume}>
@@ -105,13 +105,13 @@ const Register = () => {
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="grid-first-name"
             >
-              Paper name
+              Paper Title
             </label>
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name"
               type="text"
-              placeholder="Paper Name"
+              placeholder="Paper Title"
             />
           </div>
         </div>
@@ -188,7 +188,7 @@ const Register = () => {
       onClick={handleSubmit}
       className="text-white bg-green-500 hover:bg-green-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-green-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
     >
-      Submit
+      Submit Manuscript
     </button>
   </div>
 </div>

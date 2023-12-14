@@ -5,44 +5,45 @@ import { Link } from "@react-email/link";
 const HomePage = () => {
     return (
         <div className="max-w-7xl mx-auto p-6 text-justify">
-            <h1 className="text-4xl font-bold mb-4 text-pijet-blue">Welcome to PIJET</h1>
+            <h1 className="text-4xl font-bold mb-4 text-pijet-blue"></h1>
 
             <div className="flex py-4">
                 <div className="w-1/2 pr-4">
-                    <img src="/pict_awards.jpg" alt="Static Image" className="w-full h-auto" />
+                    <img src="/front_page.png" alt="Static Image" className="w- h-auto" />
                 </div>
-                <div className="w-1/2 px-3 py-8">
+                <div className="w-1/2 py-4">
                     <div className="text-xl text-left">
-                        <p>
-                            <strong>Journal Information:</strong>
+                        <p className="text-2xl underline">
+                            <strong>Journal Particulars:</strong>
                         </p>
                         <br />
-                        <p>
-                            <strong>Email Queries to:</strong> <Link href="mailto:pijet@pict.edu">pijet@pict.edu</Link>
-                        </p>
-                        {/* <p>
-                            <strong>Scopus Official Link:</strong> <a href="https://www.scopus.com/sourceid/16200154732" target="_blank" rel="noopener noreferrer">https://www.scopus.com/sourceid/16200154732</a>
-                        </p> */}
-                        {/* <p><strong>Acceptance Rate:</strong> y%</p> */}
-                        <p><strong>Open Access & Peer Reviewed Journal</strong></p>
-                        <p><strong>Bi-Annually Published Issues</strong></p>
+                        {/* <li><strong>ISSN Number:</strong> ABCD-EFGH</li>
+                        <li><strong>Impact Factor:</strong> 6.3</li>
+                        <li><strong>Acceptance Rate:</strong> 12%</li> */}
+                        <li><strong>Publication format:</strong> Online</li>
+                        <li><strong>Open Access Publication</strong></li>
+                        <li><strong>Peer Reviewed Journal</strong></li>
+                        <li><strong>Bi-Annually Published Issues</strong></li>
+                        <li><strong>Publisher:</strong> <Link href="https://www.pict.edu">SCTR's Pune Institute of Computer Technology</Link></li>
+                        <li><strong>Present Issue:</strong> Volume 1 - Issue 2 (Accepting papers)</li>
+                        <li><strong>Language:</strong> English</li>
                         {/* <p>
                             <strong>Impact Factor:</strong> 6.3
                         </p> */}
                         <br />
-                        <strong>Frequent Links:</strong>
+                        <p><strong>Frequent Links:</strong></p>
                         <br/>
-                        <div className="flex text-s justify-evenly">
-                            <p><a href="/PIJET_COPYRIGHT.pdf" className="text-blue-500">Copyright Form</a></p>
-                            <p><a href="/register" className="text-blue-500">Registration Form</a></p>
-                            <p><a href="/Sample_Manuscript_PIJET.docx" className="text-blue-500">Sample Manuscript</a></p>
+                        <div className="text-s justify-evenly">
+                            <li><a href="/PIJET_COPYRIGHT.pdf" className="text-blue-500">Copyright Form</a></li>
+                            <li><a href="/register" className="text-blue-500">Manuscript Submission Form</a></li>
+                            <li><a href="/Sample_Manuscript_PIJET.docx" className="text-blue-500">Standard Manuscript Template</a></li>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="py-5">
-                <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3">About PIJET:</h1>
+                <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3">About PICT's International Journal of Engineering and Technology:</h1>
 
                 <p className="mb-2 text-xl">
                     PICT's International Journal of Engineering and Technology (PIJET) represents a pioneering platform that embodies the commitment to fostering cutting-edge research and scholarly exploration in the fields of engineering and technology. With a vision to bridge the gap between theoretical knowledge and practical application, PIJET aims to serve as a catalyst for innovation and advancement, propelling the boundaries of scientific understanding and technological development. Dedicated to promoting interdisciplinary collaboration and academic excellence, PIJET seeks to publish high-impact research that not only contributes to the global knowledge pool but also addresses critical challenges and emerging trends in the ever-evolving landscape of tech. By fostering a culture of intellectual curiosity and fostering a dynamic exchange of ideas, PIJET endeavors to be at the forefront of technological innovation, driving transformative change and facilitating solutions that have real-world implications and applications.
@@ -52,9 +53,13 @@ const HomePage = () => {
             </div>
 
             <div className="py-5">
-                <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3 text-center">Journal Particulars</h1>
+                <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3">About SCTR's Pune Institute of Computer Technology:</h1>
 
-                <img src="/home_page_table.png" alt="Static Image" className="w-full h-auto" />
+                <p className="mb-2 text-xl">
+                Nestled in the heart of Pune- the “Oxford of the East”, a city known for its rich cultural heritage and dynamic tech industry, lies  <Link href="https://www.pict.edu">SCTR's Pune Institute of Computer Technology</Link>. With a laser-sharp focus on academic excellence, research, and innovation, PICT has earned a reputation as one of India's premier institutions for computer education, attracting a diverse and driven student body from around the country. PICT stands as a beacon of academic excellence, propelled by a vision to be the leader in higher technical education and research of international repute. At the heart of our mission is the commitment to becoming the most sought-after institute for education and research in emerging engineering and technology disciplines. PICT's research potential is underscored by its status as a recognized research center by Savitribai Phule Pune University (SPPU) and its continuous engagement in diverse research projects funded by prestigious organizations like DST, AICTE, DRDO, and RGSTC. 
+                <br /><br />
+                Founded in 1983 by visionary stalwarts- Shri. Gopal Krishna, Shri. N. Ramakrishna, and Shri. R. S. Kothavale- PICT has been at the forefront of computer education and research for almost four decades. PICT's recognition in national rankings and accreditation, coupled with its dedicated faculty, places it at the forefront of technological education and research, making it an ideal destination for those aspiring to contribute to cutting-edge advancements in computer science and technology.
+                </p>
             </div>
 
             <div className="py-5">
