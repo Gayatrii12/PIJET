@@ -31,7 +31,7 @@ const HomePage = () => {
                             <strong>Impact Factor:</strong> 6.3
                         </p> */}
                         <br />
-                        <p><strong>Frequent Links:</strong></p>
+                        <p><strong>Important Links and Forms:</strong></p>
                         <br/>
                         <div className="text-s justify-evenly">
                             <li><a href="/PIJET_COPYRIGHT.pdf" className="text-blue-500">Copyright Form</a></li>
@@ -48,7 +48,7 @@ const HomePage = () => {
                 <p className="mb-2 text-xl">
                     PICT's International Journal of Engineering and Technology (PIJET) represents a pioneering platform that embodies the commitment to fostering cutting-edge research and scholarly exploration in the fields of engineering and technology. With a vision to bridge the gap between theoretical knowledge and practical application, PIJET aims to serve as a catalyst for innovation and advancement, propelling the boundaries of scientific understanding and technological development. Dedicated to promoting interdisciplinary collaboration and academic excellence, PIJET seeks to publish high-impact research that not only contributes to the global knowledge pool but also addresses critical challenges and emerging trends in the ever-evolving landscape of tech. By fostering a culture of intellectual curiosity and fostering a dynamic exchange of ideas, PIJET endeavors to be at the forefront of technological innovation, driving transformative change and facilitating solutions that have real-world implications and applications.
                     <br /><br />
-                    The journal's scope encompasses a wide array of interdisciplinary domains within the realm of engineering and technology, including but not limited to Computer Engineering, Electronics & Telecommunication Engineering, Information Technology, Data Science, and Wireless Communication Technology. With a strong emphasis on original research, experimental findings, and innovative solutions, PIJET aims to become a premier platform for scholars, researchers, and practitioners to disseminate their groundbreaking discoveries, engage in scholarly discourse, and contribute to the collective advancement of the global scientific community.
+                    The journal's expansive scope spans a multitude of interdisciplinary domains within the realm of Engineering and Technology, encompassing thrust areas like Machine Learning, Cybersecurity, Cloud Computing, IoT, Blockchain,5G, Embedded Systems, Optical Networking, VLSI Design, Robotics, and many more. This diverse coverage reflects the dynamic landscape of contemporary research, addressing not only foundational areas but also delving into cutting-edge topics that shape the future of global connectivity and technological innovation. With a strong emphasis on original research, experimental findings, and innovative solutions, PIJET aims to become a premier platform for scholars, researchers, and practitioners to disseminate their groundbreaking discoveries, engage in scholarly discourse, and contribute to the collective advancement of the global scientific community.
                 </p>
             </div>
 
@@ -62,7 +62,7 @@ const HomePage = () => {
                 </p>
             </div>
 
-            <div className="py-5">
+            {/* <div className="py-5">
                 <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3">Scopus</h1>
 
                 <p className="mb-2 text-xl">
@@ -72,7 +72,7 @@ const HomePage = () => {
                 <p className="mb-2 text-xl">
                     We're on a mission to make our journal recognized worldwide. In the initial phase, PIJET is set to be indexed by IJRASET, a testament to our dedication to quality work and the dissemination of impactful research. Looking ahead, we have a long-term plan to secure indexing in renowned databases such as Scopus or SCI. This strategic vision underscores our ambition to elevate PIJET to a global platform, ensuring that our published content not only meets the highest academic standards but also reaches a widespread international audience.
                 </p>
-            </div>
+            </div> */}
         </div>
     );
 };

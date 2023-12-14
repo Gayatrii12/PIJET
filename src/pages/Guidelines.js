@@ -50,9 +50,9 @@ const Guidelines = () => {
             </div>
 
             <div className="py-4">
-                <h1 className="text-4xl font-bold mb-4 text-pijet-blue text-center">ARTICLE PROCESSING</h1>
+                <h1 className="text-4xl font-bold mb-4 text-pijet-blue text-center">MANUSCRIPT REVIEW PROCEDURE</h1>
                 <div className="mb-8 text-xl py-4">
-                    All submitted articles will be initially subjected to editorial procedures and if found suitable for publishing will be sent to reviewers for peer review. Once the review process is over and the article is accepted, authors will be intimated over email provided with a paper ID, which the author is insisted to reply within 3 days of time, after which the article will be sent for publishing after all the necessary formalities are done.
+                    <img src="/flowchart_manuscript_publishing.jpg" alt="Static Image" className="w- h-auto mx-auto" />
                 </div>
             </div>
             <div className="py-4">
