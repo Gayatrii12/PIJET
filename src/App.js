@@ -1,6 +1,6 @@
 
 import './App.css';
- 
+
 import { ThemeProvider } from "@material-tailwind/react";
 import EthicsAndPolicies from './pages/EthicsAndPolicies';
 import HomePage from './pages/HomePage';
@@ -14,24 +14,24 @@ import CallForPapers from './pages/CallForPapers';
 import Register from './pages/Register';
 function App() {
   return (
-    
+
     <div className="App">
-      <ThemeProvider>  
+      <ThemeProvider>
         <BrowserRouter>
-        <Navbar/>
-            <Routes>
-                <Route path="" element={<HomePage/>}/>    
-                <Route path="guideline" element={<Guidelines/>}/>    
-                <Route path="call-for-papers" element={<CallForPapers/>}/>    
-                <Route path="editorial-board" element={<Ourteam/>}/>    
-                <Route path="ethics-policies" element={<EthicsAndPolicies/>}/>    
-                <Route path="archives" element={<Archive/>}/>    
-                <Route path="contact-us" element={<ContactUs/>}/>
-                <Route path="register" element={<Register/>}/>   
-            </Routes>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/guideline" element={<Guidelines />} />
+            <Route path="/call-for-papers" element={<CallForPapers />} />
+            <Route path="/editorial-board" element={<Ourteam />} />
+            <Route path="/ethics-policies" element={<EthicsAndPolicies />} />
+            <Route path="/archives" element={<Archive />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
         </BrowserRouter>
-      </ThemeProvider> 
-        
+      </ThemeProvider>
+
     </div>
   );
 }

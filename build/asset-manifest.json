@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pijet/static/css/main.d111a454.css",
+    "main.js": "/pijet/static/js/main.f869d02c.js",
+    "static/js/787.a986f7b8.chunk.js": "/pijet/static/js/787.a986f7b8.chunk.js",
+    "index.html": "/pijet/index.html",
+    "main.d111a454.css.map": "/pijet/static/css/main.d111a454.css.map",
+    "main.f869d02c.js.map": "/pijet/static/js/main.f869d02c.js.map",
+    "787.a986f7b8.chunk.js.map": "/pijet/static/js/787.a986f7b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d111a454.css",
+    "static/js/main.f869d02c.js"
+  ]
+}
