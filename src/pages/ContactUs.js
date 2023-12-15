@@ -22,9 +22,9 @@ const ContactUs = () => {
         Please use this form for general inquiries or management-related problems. For any issues related to manuscripts, please email <Link href="mailto:pijet@pict.edu">pijet@pict.edu</Link> along with your manuscript ID for publication-related queries.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-4 py-5">
-        <div>
-          <label className="block text-lg text-xl font-medium text-gray-700">Name</label>
+      <form onSubmit={handleSubmit} className="space-y-4 py-5 mx-auto">
+        <div >
+          <label className="block text-lg text-xl text-left font-medium text-gray-700">Name</label>
           <input
             type="text"
             className="mt-1 p-2 w-full border rounded-md"
@@ -36,7 +36,7 @@ const ContactUs = () => {
         </div>
 
         <div>
-          <label className="block text-lg text-xl font-medium text-gray-700">Email</label>
+          <label className="block text-lg text-xl text-left font-medium text-gray-700">Email</label>
           <input
             type="email"
             className="mt-1 p-2 w-full border rounded-md"
@@ -48,7 +48,7 @@ const ContactUs = () => {
         </div>
 
         <div>
-          <label className="block text-lg text-xl font-medium text-gray-700">Query</label>
+          <label className="block text-lg text-xl text-left font-medium text-gray-700">Query</label>
           <textarea
             className="mt-1 p-2 w-full border rounded-md"
             placeholder="Enter your query"
@@ -59,7 +59,7 @@ const ContactUs = () => {
           />
         </div>
 
-        <button type="submit" className="bg-pijet-blue text-white p-3 rounded-md hover:bg-pijet-dark-blue">
+        <button type="submit" className="bg-pijet-blue  text-white p-3 rounded-md hover:bg-pijet-dark-blue hover:scale-110">
           Submit
         </button>
       </form>
