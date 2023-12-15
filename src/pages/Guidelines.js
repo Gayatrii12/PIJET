@@ -52,7 +52,7 @@ const Guidelines = () => {
             <div className="py-4">
                 <h1 className="text-4xl font-bold mb-4 text-pijet-blue text-center">MANUSCRIPT REVIEW PROCEDURE</h1>
                 <div className="mb-8 text-xl py-4">
-                    <img src="/flowchart_manuscript_publishing.jpg" alt="Static Image" className="w- h-auto mx-auto" />
+                    <img src="/flowchart.jpg" alt="Static Image" className="w- h-auto mx-auto" />
                 </div>
             </div>
             <div className="py-4">

@@ -109,10 +109,6 @@ function Ourteam() {
         </div>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <div class="text-center text-gray-500 dark:text-gray-400">
-            {/* <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrAmolPotgantwar.png"
-            /> */}
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. A. D. Potgantwar
             </h3>
@@ -120,10 +116,6 @@ function Ourteam() {
             <p>SITRC, Nashik, India</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
-            {/* <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrJayshreePansare.jpeg"
-            /> */}
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. J. R. Pansare
             </h3>
@@ -131,10 +123,6 @@ function Ourteam() {
             <p>MESCOE, Pune, India</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
-            {/* <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrOmkarSureshVaidya.jpeg"
-            /> */}
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. O. S. Vaidya
             </h3>
@@ -142,10 +130,6 @@ function Ourteam() {
             <p>SITRC, Nashik, India</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
-            {/* <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrSwatiBhavsar.jpg"
-            /> */}
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. S. A. Bhavsar
             </h3>
@@ -153,21 +137,13 @@ function Ourteam() {
             <p>Matoshri College of Engineering, Nashik, India</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
-            {/* <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrVarshaHarpale.jpg"
-            /> */}
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              Dr. Varsha K. Harpale
+              Dr. V. K. Harpale
             </h3>
             <p>Associate Prof., Dept. of E&TC</p>
             <p>PCCOE, Pune, India</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
-            {/* <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
-            /> */}
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. Vrushali Mendre
             </h3>

@@ -47,11 +47,6 @@ const Archive = () => {
                     Issue 1 : December 2023
                   </p>
                 </a>
-                <Link to="/call-for-papers">
-                  <p className="mb-3 font-normal underline text-white hover:scale-110">
-                    Issue 2 : Accepting Papers!
-                  </p>
-                </Link>
                 {/* Add more issues as needed */}
               </div>
               <img
