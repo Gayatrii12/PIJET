@@ -2,6 +2,7 @@ import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { Topic } from '../data/topics';
 import { TopicCard } from '../components/topicCard';
+import { Link } from "react-router-dom";
 
 const CallForPapers = () => {
 
@@ -16,7 +17,7 @@ const CallForPapers = () => {
           advancements in Computer Science, Information Technology, Electronics,
           and Telecommunication. This call encompasses a broad spectrum of
           topics within these domains, providing a platform to showcase
-          innovative research, practical applications, and emerging trends.
+          innovative research, practical applications, and emerging trends. Authors are required to submit their manuscripts by filling the <Link to="/register" className="underline text-blue-500">Manuscript Submission Form</Link>.
         </p>
         <h1 className="text-3xl font-bold mt-16 text-center text-pijet-blue">
           TOPICS

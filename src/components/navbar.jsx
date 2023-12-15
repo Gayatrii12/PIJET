@@ -4,7 +4,7 @@ import {Outlet, Link} from "react-router-dom";
             <>
             <img src="/header.png" alt="header" border="0" class="mx-auto w-full " />
             <div class=" navbar-wrapper items-center text-white text-xl justify-center h-16 w-100% p-15 shadow-md  bg-pijet-blue px-10">
-                <div class=" w-100%   h-10">
+                <div class=" w-100% h-10">
                     <ul class="flex  items-center py-4 justify-evenly text-white" >
                         <Link to="/">
                             <li class="font-manrope font-medium text-md text-white hover:scale-110 ease-out duration-2git 00 ">HOME</li>

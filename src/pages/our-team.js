@@ -16,6 +16,7 @@ function Ourteam() {
             Dr. S. T. Gandhe
           </h3>
           <p>Principal PICT, Pune, India</p>
+          <p>Email ID</p>
         </div>
       </div>
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
@@ -23,9 +24,6 @@ function Ourteam() {
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
             Editorial Board Members
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Team of Editorial Board Members of PIJET
-          </p>
         </div>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <div class="text-center text-gray-500 dark:text-gray-400">
@@ -38,6 +36,7 @@ function Ourteam() {
             </h3>
             <p>Director</p>
             <p>IIIT Nagpur, India</p>
+            <p>director@iiitn.ac.in</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
@@ -49,6 +48,7 @@ function Ourteam() {
             </h3>
             <p>Director</p>
             <p>SGGSIET Nanded, India</p>
+            <p>mbkokare@sggs.ac.in</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
@@ -60,6 +60,7 @@ function Ourteam() {
             </h3>
             <p>Prof. & Head, E&TC Dept.</p>
             <p>VNIT Nagpur, India</p>
+            <p>agkeskar@ece.vnit.ac.in</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
@@ -71,6 +72,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Electrical Engineering Dept.</p>
             <p>IIT Patna, India</p>
+            <p>mahesh@iitp.ac.in</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
@@ -84,6 +86,7 @@ function Ourteam() {
             <p>Associate Prof., New York University</p>
             <p>Dept. of Information Systems and Statistics</p>
             <p>New York, USA</p>
+            <p>radhika.jain@baruch.cuny.edu</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
@@ -95,6 +98,7 @@ function Ourteam() {
             </h3>
             <p>Assistant Prof., Dept. of English</p>
             <p>George Mason University, Virginia, USA</p>
+            <p>nupur.jalindre@gmail.com</p>
           </div>
         </div>
       </div>
@@ -103,9 +107,6 @@ function Ourteam() {
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
             Reviewers
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Team of Reviewers of PIJET
-          </p>
         </div>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <div class="text-center text-gray-500 dark:text-gray-400">
@@ -114,6 +115,7 @@ function Ourteam() {
             </h3>
             <p>Director - School of Computer Science & Engg.</p>
             <p>SITRC, Nashik, India</p>
+            <p>amol.potgantwar@sitrc.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -121,6 +123,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of Computer Engg.</p>
             <p>MESCOE, Pune, India</p>
+            <p>jayshree.pansare@mescoepune.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -128,6 +131,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of E&TE</p>
             <p>SITRC, Nashik, India</p>
+            <p>omkar.vaidya@sitrc.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -135,6 +139,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of Computer Engg.</p>
             <p>Matoshri College of Engineering, Nashik, India</p>
+            <p>swati.bhavsar@matoshri.edu.im</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -142,6 +147,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of E&TC</p>
             <p>PCCOE, Pune, India</p>
+            <p>varsha.harpale@pccoepune.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -149,6 +155,59 @@ function Ourteam() {
             </h3>
             <p>Assitant Prof.</p>
             <p>AISSMS, Pune</p>
+            {/* <p>Email ID</p> */}
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. G. V. Kale
+            </h3>
+            <p>Associate Prof. and Head,</p>
+            <p>Dept. of Computer Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>gvkale@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. K. C. Waghmare
+            </h3>
+            <p>Assitant Prof., Dept. of Computer Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>kcwaghmare@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. A. S. Ghotkar
+            </h3>
+            <p>Associate Prof. and Head,</p>
+            <p>Dept. of Information Technology</p>
+            <p>PICT, Pune, India</p>
+            <p>aaghotkar@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. A. M. Bagade
+            </h3>
+            <p>Associate Prof., Dept. of Information Technology</p>
+            <p>PICT, Pune, India</p>
+            <p>ambagade@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. S. K. Moon
+            </h3>
+            <p>Associate Prof.</p>
+            <p>Dept. of E&TC Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>skmoon@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. R. G. Yelalwar
+            </h3>
+            <p>Associate Prof.</p>
+            <p>Dept. of E&TC Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>rgyelalwar@pict.edu</p>
           </div>
         </div>
       </div>
@@ -169,6 +228,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of E&TC</p>
             <p>PICT, Pune, India</p>
+            <p>rcjaiswal@pict.edu</p>
           </div>
         </div>
       </div>
