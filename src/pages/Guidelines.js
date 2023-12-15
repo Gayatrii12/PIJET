@@ -1,6 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { Link } from "@react-email/link"; 
+import { Link } from "react-router-dom"; 
 
 const Guidelines = () => {
     return (
@@ -29,7 +29,7 @@ const Guidelines = () => {
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Plagiarism: </strong> Submissions are allowed a maximum tolerance of 10% for text plagiarism and 10% for AI-generated text. It is crucial that the remaining 90% of the content is original and not sourced from external materials.</li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Review and Proofread: </strong>
-                        Authors must ensure compliance with submission guidelines. Review and proofread your manuscript before submission. Refer to our <a href="/ethics-policies" className="underline text-blue-500">Ethics and Policies</a> for more information.</li>
+                        Authors must ensure compliance with submission guidelines. Review and proofread your manuscript before submission. Refer to our <Link to="/ethics-policies" className="underline text-blue-500">Ethics and Policies</Link> for more information.</li>
                 </div>
 
                 <div className="py-4">
@@ -45,7 +45,7 @@ const Guidelines = () => {
             <div className="py-4">
                 <h1 className="text-4xl font-bold mb-4 text-pijet-blue text-center">MANUSCRIPT SUBMISSION</h1>
                 <div className="mb-8 py-4 text-xl">
-                Authors are required to submit their manuscripts by filling the <a href="/register" className="underline text-blue-500">Manuscript Submission Form</a>. Once received, the manuscripts undergo thorough scrutiny by the editorial board and reviewer committee, who subsequently provide responses via email, indicating either acceptance, rejection, or additional clarifications and changes. In the event of acceptance, authors are promptly notified and requested to submit the copyright form simultaneously along with the final manuscript copy. Upon receiving the completed copyright form, the accepted manuscript proceeds through the publishing process and is made available in the prospective issue.
+                Authors are required to submit their manuscripts by filling the <Link to="/register" className="underline text-blue-500">Manuscript Submission Form</Link>. Once received, the manuscripts undergo thorough scrutiny by the editorial board and reviewer committee, who subsequently provide responses via email, indicating either acceptance, rejection, or additional clarifications and changes. In the event of acceptance, authors are promptly notified and requested to submit the copyright form simultaneously along with the final manuscript copy. Upon receiving the completed copyright form, the accepted manuscript proceeds through the publishing process and is made available in the prospective issue.
                 </div>
             </div>
 
