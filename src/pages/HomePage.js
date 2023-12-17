@@ -36,7 +36,7 @@ const HomePage = () => {
                         <div className="text-s justify-evenly">
                             <li><a href="/PIJET_COPYRIGHT.pdf" className="text-blue-500">Copyright Form</a></li>
                             <li><Link to="/register" className="text-blue-500">Manuscript Submission Form</Link></li>
-                            <li><a href="/Sample_Manuscript_PIJET.docx" className="text-blue-500">Standard Manuscript Template</a></li>
+                            <li><a href="/Standard_Manuscript_Template.docx" className="text-blue-500">Standard Manuscript Template</a></li>
                         </div>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ function Ourteam() {
             Dr. S. T. Gandhe
           </h3>
           <p>Principal PICT, Pune, India</p>
-          <p>Email ID</p>
+          <p>principal@pict.edu</p>
         </div>
       </div>
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
@@ -156,7 +156,7 @@ function Ourteam() {
             </h3>
             <p>Assitant Prof.</p>
             <p>AISSMS, Pune</p>
-            {/* <p>Email ID</p> */}
+            <p>vrushalimendre@gmail.com</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
