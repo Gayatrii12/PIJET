@@ -1,112 +1,113 @@
 function Ourteam() {
   return (
-    <section class="bg-white">
-      <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-        <h2 class="my-6 text-4xl tracking-tight font-extrabold text-pijet-blue">
+    <section className="bg-white">
+      <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <h2 className="my-6 text-4xl tracking-tight font-extrabold text-pijet-blue">
           Chief Editor
         </h2>
       </div>
-      <div class="grid gap-8 lg:gap-16 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-        <div class="text-center text-gray-500 dark:text-gray-400">
+      <div className="grid gap-8 lg:gap-16 sm:grid-cols-21 md:grid-cols-1 lg:grid-cols-1">
+        <div className="text-center text-gray-500 dark:text-gray-400">
           <img
-            class="mx-auto mb-4 w-36 h-36 rounded-full"
-            src="/DrSTGandhe.jpg"
+            className="mx-auto mb-4 w-36 h-36 rounded-full"
+            src="/DrSTGandhe.png"
+            alt="Dr. S. T. Gandhe"
           />
-          <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+          <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
             Dr. S. T. Gandhe
           </h3>
-          <p>Principal</p>
-          <p>PICT Pune, India</p>
+          <p>Principal PICT, Pune, India</p>
+          <p>principal@pict.edu</p>
         </div>
       </div>
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-        <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
             Editorial Board Members
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Team of Editorial Board Members of PIJET
-          </p>
         </div>
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <div class="text-center text-gray-500 dark:text-gray-400">
+        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DROGKakade.jpg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. O. G. Kakade
             </h3>
             <p>Director</p>
             <p>IIIT Nagpur, India</p>
+            <p>director@iiitn.ac.in</p>
           </div>
-          <div class="text-center text-gray-500 dark:text-gray-400">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrManeshKokare.jpeg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. M. B. Kokare
             </h3>
             <p>Director</p>
             <p>SGGSIET Nanded, India</p>
+            <p>mbkokare@sggs.ac.in</p>
           </div>
-          <div class="text-center text-gray-500 dark:text-gray-400">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrAGKeskar.jpg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. A. G. Keskar
             </h3>
             <p>Prof. & Head, E&TC Dept.</p>
             <p>VNIT Nagpur, India</p>
+            <p>agkeskar@ece.vnit.ac.in</p>
           </div>
-          <div class="text-center text-gray-500 dark:text-gray-400">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrMaheshkumarKolekar.jpeg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. M. H. Kolekar
             </h3>
             <p>Associate Prof., Electrical Engineering Dept.</p>
             <p>IIT Patna, India</p>
+            <p>mahesh@iitp.ac.in</p>
           </div>
-          <div class="text-center text-gray-500 dark:text-gray-400">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrRadhikaJain.jpg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. Radhika Jain
 
             </h3>
             <p>Associate Prof., New York University</p>
             <p>Dept. of Information Systems and Statistics</p>
             <p>New York, USA</p>
+            <p>radhika.jain@baruch.cuny.edu</p>
           </div>
-          <div class="text-center text-gray-500 dark:text-gray-400">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrNupoorRanade.jpg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. Nupoor Ranade
             </h3>
             <p>Assistant Prof., Dept. of English</p>
             <p>George Mason University, Virginia, USA</p>
+            <p>nupur.jalindre@gmail.com</p>
           </div>
         </div>
       </div>
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-        <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
             Reviewers
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Team of Reviewers of PIJET
-          </p>
         </div>
         <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <div class="text-center text-gray-500 dark:text-gray-400">
@@ -115,6 +116,7 @@ function Ourteam() {
             </h3>
             <p>Director - School of Computer Science & Engg.</p>
             <p>SITRC, Nashik, India</p>
+            <p>amol.potgantwar@sitrc.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -122,6 +124,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of Computer Engg.</p>
             <p>MESCOE, Pune, India</p>
+            <p>jayshree.pansare@mescoepune.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -129,6 +132,7 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of E&TE</p>
             <p>SITRC, Nashik, India</p>
+            <p>omkar.vaidya@sitrc.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -136,13 +140,15 @@ function Ourteam() {
             </h3>
             <p>Associate Prof., Dept. of Computer Engg.</p>
             <p>Matoshri College of Engineering, Nashik, India</p>
+            <p>swati.bhavsar@matoshri.edu.im</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
-              Dr. Varsha K. Harpale
+              Dr. V. K. Harpale
             </h3>
             <p>Associate Prof., Dept. of E&TC</p>
             <p>PCCOE, Pune, India</p>
+            <p>varsha.harpale@pccoepune.org</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -150,26 +156,80 @@ function Ourteam() {
             </h3>
             <p>Assitant Prof.</p>
             <p>AISSMS, Pune</p>
+            <p>vrushalimendre@gmail.com</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. G. V. Kale
+            </h3>
+            <p>Associate Prof. and Head,</p>
+            <p>Dept. of Computer Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>gvkale@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. K. C. Waghmare
+            </h3>
+            <p>Assitant Prof., Dept. of Computer Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>kcwaghmare@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. A. S. Ghotkar
+            </h3>
+            <p>Associate Prof. and Head,</p>
+            <p>Dept. of Information Technology</p>
+            <p>PICT, Pune, India</p>
+            <p>aaghotkar@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. A. M. Bagade
+            </h3>
+            <p>Associate Prof., Dept. of Information Technology</p>
+            <p>PICT, Pune, India</p>
+            <p>ambagade@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. S. K. Moon
+            </h3>
+            <p>Associate Prof.</p>
+            <p>Dept. of E&TC Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>skmoon@pict.edu</p>
+          </div>
+          <div class="text-center text-gray-500 dark:text-gray-400">
+            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+              Dr. R. G. Yelalwar
+            </h3>
+            <p>Associate Prof.</p>
+            <p>Dept. of E&TC Engineering</p>
+            <p>PICT, Pune, India</p>
+            <p>rgyelalwar@pict.edu</p>
           </div>
         </div>
       </div>
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-        <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+        <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-pijet-blue">
             Journal Coordinator
           </h2>
         </div>
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-21 md:grid-cols-1 lg:grid-cols-1">
-          <div class="text-center text-gray-500 dark:text-gray-400">
+        <div className="grid gap-8 lg:gap-16 sm:grid-cols-21 md:grid-cols-1 lg:grid-cols-1">
+          <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full"
+              className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/Coordinators1.jpeg"
             />
-            <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
+            <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. R. C. Jaiswal
             </h3>
             <p>Associate Prof., Dept. of E&TC</p>
             <p>PICT, Pune, India</p>
+            <p>rcjaiswal@pict.edu</p>
           </div>
         </div>
       </div>
