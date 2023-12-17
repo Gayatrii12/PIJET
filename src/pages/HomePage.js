@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
     return (
         <div className="max-w-7xl mx-auto p-6 text-justify">
-            <h1 className="text-4xl font-bold mb-4 text-pijet-blue"></h1>
+        
 
-            <div className="flex py-4 sm:cols-1">
-                <div className="w-1/2 pr-4">
+            <div className="md:flex py-4 ">
+                <div className="w-full md:w-1/2  md:pr-4">
                     <img src="/front_page.png" alt="Static Image" className="w- h-auto" />
                 </div>
-                <div className="w-1/2 py-4">
+                <div className="w-full md:w-1/2 py-4">
                     <div className="text-xl text-left">
-                        <p className="text-2xl underline">
-                            <strong>Journal Particulars:</strong>
+                        <p className="text-2xl text-pijet-blue pb-2 ">
+                            <strong><u>Journal</u> <u>Particulars</u>:</strong>
                         </p>
-                        <br />
+                        
                         {/* <li><strong>ISSN Number:</strong> ABCD-EFGH</li>
                         <li><strong>Impact Factor:</strong> 6.3</li>
                         <li><strong>Acceptance Rate:</strong> 12%</li> */}
@@ -53,7 +53,7 @@ const HomePage = () => {
             </div>
 
             <div className="py-5">
-                <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-3">About SCTR's Pune Institute of Computer Technology:</h1>
+                <h1 className="text-3xl md:text-4xl font-bold mb-4 text-pijet-blue py-3">About SCTR's Pune Institute of Computer Technology:</h1>
 
                 <p className="mb-2 text-xl">
                 Nestled in the heart of Pune- the “Oxford of the East”, a city known for its rich cultural heritage and dynamic tech industry, lies  <Link to="https://www.pict.edu">SCTR's Pune Institute of Computer Technology</Link>. With a laser-sharp focus on academic excellence, research, and innovation, PICT has earned a reputation as one of India's premier institutions for computer education, attracting a diverse and driven student body from around the country. PICT stands as a beacon of academic excellence, propelled by a vision to be the leader in higher technical education and research of international repute. At the heart of our mission is the commitment to becoming the most sought-after institute for education and research in emerging engineering and technology disciplines. PICT's research potential is underscored by its status as a recognized research center by Savitribai Phule Pune University (SPPU) and its continuous engagement in diverse research projects funded by prestigious organizations like DST, AICTE, DRDO, and RGSTC. 

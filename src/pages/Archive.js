@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
-
+import { motion } from 'framer-motion';
 const Archive = () => {
   const [expanded, setExpanded] = useState(false);
 
@@ -25,14 +23,15 @@ const Archive = () => {
     <div className="py-10 h-100">
       <div className="py-6">
         <h1 className="text-4xl font-bold mb-4 py-8 text-pijet-blue">PRESENT ISSUE</h1>
-        <div className="flex-col items-center justify-center mx-auto bg-pijet-blue border text-xl border-gray-200 rounded-lg shadow sm:flex-col sm:max-w-md">
+        <motion.div className="flex-col items-center justify-center mx-auto bg-pijet-blue border text-xl w-4/5 md:w-md border-gray-200 rounded-lg shadow sm:flex-col sm:max-w-md"
+        whileHover={{scale:1.1}}>
           <div
             className="cursor-pointer"
             onClick={toggleExpand}
           >
-            <div className="flex justify-evenly p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-                <li>2023 - Volume 1</li>
+            <div className="flex justify-center p-4 items-center leading-normal">
+              <h5 className=" text-2xl font-medium text-center tracking-tight text-white">
+                •  2023 - Volume 1 - Issue 1  •
               </h5>
               {/* <p className="mb-2 font-normal text-white hover:scale-110">
               {expanded ? 'Collapse' : 'Expand'}
@@ -56,7 +55,7 @@ const Archive = () => {
               />
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
       <div className="py-8">
         <h1 className="text-4xl font-bold mb-4 text-pijet-blue py-8">PREVIOUS ISSUES</h1>
