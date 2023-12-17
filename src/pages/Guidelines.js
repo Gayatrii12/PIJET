@@ -9,7 +9,7 @@ const Guidelines = () => {
                 <h1 className="text-4xl font-bold mb-4 text-pijet-blue text-center py-4">MANUSCRIPT GUIDELINES</h1>
                 <div className="mb-6">
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Formatting Requirements: </strong>
-                        Use Times New Roman, Font Size 15 for the main title. Subtitles should be in Bold with Font Size 10, and the body in Font Size 10. The manuscript should be limited to 6 pages.</li>
+                        Use Times New Roman, Font Size 15 for the main title. Subtitles should be in Bold with Font Size 10, and the body in Font Size 10. The manuscript length should fall within the range of 6 to 15 pages.</li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Text Structure: </strong>
                         All paragraphs should be justified, in a single column, with single-line spacing. Organize your content into Heading, Abstract, Keywords, Introduction, Materials and Methods, Results and Discussion, Conclusion, Acknowledgment, and References.</li>
@@ -21,7 +21,7 @@ const Guidelines = () => {
                         Authors should declare any competing interests.</li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">Submission Limits: </strong>
-                        Your manuscript should not exceed 6 pages.</li>
+                    Make sure your manuscript comprises no less than 6 pages and does not surpass a total of 15 pages.</li>
 
                     <li className="text-xl"><strong className="text-xl font-bold mb-2">File Formats: </strong>
                         Submit in both PDF and MS Word formats.</li>
@@ -34,7 +34,7 @@ const Guidelines = () => {
 
                 <div className="py-4">
                     <p className="text-xl"><strong className="text-xl font-bold mb-2">Sample Manuscript: </strong>
-                        For a sample manuscript, refer to <a href="/Sample_Manuscript_PIJET.docx" className="text-blue-500 underline">Standard Manuscript Template</a>.</p>
+                        For reference manuscript, kindly download the <a href="/Standard_Manuscript_Template.docx" className="text-blue-500 underline">Standard Manuscript Template</a>.</p>
                 </div>
 
                 <div className="py-4 text-center">
