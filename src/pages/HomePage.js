@@ -24,8 +24,8 @@ const HomePage = () => {
                         <li><strong>Open Access Publication</strong></li>
                         <li><strong>Peer Reviewed Journal</strong></li>
                         <li><strong>Bi-Annually Published Issues</strong></li>
-                        <li><strong>Publisher:</strong> <Link to="https://www.pict.edu">SCTR's Pune Institute of Computer Technology</Link></li>
-                        <li><strong>Present Issue:</strong> Volume 1 - Issue 1 (View in Archives)</li>
+                        <li><strong>Publisher:</strong> <Link to="https://www.pict.edu" className="text-blue-500">SCTR's Pune Institute of Computer Technology</Link></li>
+                        <li><strong>Present Issue:</strong> Volume 1 - Issue 1 (<Link to="/archives" className="text-blue-500">View in Archives</Link>)</li>
                         <li><strong>Language:</strong> English</li>
                         <br />
                         <p><strong>Important Links and Forms:</strong></p>

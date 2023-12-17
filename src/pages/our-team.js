@@ -10,7 +10,7 @@ function Ourteam() {
         <div className="text-center text-gray-500 dark:text-gray-400">
           <img
             className="mx-auto mb-4 w-36 h-36 rounded-full"
-            src="/DrSTGandhe.png"
+            src="/DrSTGandhe.jpg"
             alt="Dr. S. T. Gandhe"
           />
           <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -155,7 +155,7 @@ function Ourteam() {
               Dr. Vrushali Mendre
             </h3>
             <p>Assitant Prof.</p>
-            <p>AISSMS, Pune</p>
+            <p>AISSMS, Pune, India</p>
             <p>vrushalimendre@gmail.com</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
