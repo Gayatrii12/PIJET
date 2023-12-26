@@ -41,7 +41,7 @@ const Archive = () => {
           {expanded && (
             <div>
               <div className="flex flex-col justify-between leading-normal">
-                <a href="/sampleVolume.pdf" className="mb-3 font-normal underline text-white hover:scale-110">
+                <a href="/Volume1-Issue1-December2023.pdf" className="mb-3 font-normal underline text-white hover:scale-110">
                     Issue 1 : December 2023
                 </a>
                 {/* Add more issues as needed */}
