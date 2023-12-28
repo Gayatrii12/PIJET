@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="navbar-wrapper items-center text-white text-xl justify-center- md:h-auto w-3/5  md:w-full rounded-lg md:rounded-none my-1 mx-2 md:my-0 md:mx-0 p-15 shadow-md sm:text-xs  bg-pijet-blue px-10 ">
         <div className={"md:h-auto "}>
           <ul className={(" flex-col space-y-4 md:space-y-0 z-10 md:flex-row md:flex items-center py-5 md:py-3 justify-evenly text-white ")+(isOpen?("flex"):("hidden"))} animate={isOpen ? "open" : "closed"}
-      variants={variants} transition={{ delay: 0.3 }}>
+      variants={variants} transition={{ delay: 0.3 }} onClick={toggleisOpen}>
             <NavItem to="/" active={isActive("/")}>
               HOME
             </NavItem>
