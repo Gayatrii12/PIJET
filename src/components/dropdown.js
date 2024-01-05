@@ -16,9 +16,9 @@ const DropDown = ({ paperMap }) => {
     };
   }, []);
 
-  const handlePaperChange = (event) => {
-    setSelectedPaper(event.target.value);
-  };
+  // const handlePaperChange = (event) => {
+  //   setSelectedPaper(event.target.value);
+  // };
 
   const handleButtonClick = async () => {
     if (selectedPaper) {

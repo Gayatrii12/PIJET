@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const HomePage = () => {
 
             <div className="md:flex py-4 ">
                 <div className="w-full md:w-1/2  md:pr-4 ">
-                    <img src="/front_page.png" alt="Static Image" className="w- h-auto border-solid border-2 border-black" />
+                    <img src="/front_page.png" alt="Static" className="w- h-auto border-solid border-2 border-black" />
                 </div>
                 <div className="w-full md:w-1/2 py-4">
                     <div className="text-xl text-left">

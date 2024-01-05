@@ -31,6 +31,7 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DROGKakade.jpg"
+              alt="Dr. O. G. Kakade"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. O. G. Kakade
@@ -43,6 +44,7 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrManeshKokare.jpeg"
+              alt="Dr. M. B. Kokare"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. M. B. Kokare
@@ -55,6 +57,7 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrAGKeskar.jpg"
+              alt="Dr. A. G. Keskar"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. A. G. Keskar
@@ -67,6 +70,7 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrMaheshkumarKolekar.jpeg"
+              alt="Dr. M. H. Kolekar"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. M. H. Kolekar
@@ -79,10 +83,10 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrRadhikaJain.jpg"
+              alt="Dr. Radhika Jain"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. Radhika Jain
-
             </h3>
             <p>Associate Prof., New York University</p>
             <p>Dept. of Information Systems and Statistics</p>
@@ -93,6 +97,7 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/DrNupoorRanade.jpg"
+              alt="Dr. Nupoor Ranade"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. Nupoor Ranade
@@ -223,6 +228,7 @@ function Ourteam() {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src="/Coordinators1.jpeg"
+              alt="Dr. R. C. Jaiswal"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. R. C. Jaiswal
