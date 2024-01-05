@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { motion } from 'framer-motion';
+import DropDown from '../components/dropdown';
+import { Vol1_Issue1_paperMap } from '../data/paperMaps';
 const Archive = () => {
   const [expanded, setExpanded] = useState(false);
 
@@ -45,12 +47,13 @@ const Archive = () => {
                     Issue 1 : December 2023
                 </a>
                 {/* Add more issues as needed */}
+                <DropDown paperMap={Vol1_Issue1_paperMap} />
               </div>
-              <img
+              {/* <img
                 className="object-cover mx-auto rounded-t-lg h-96 pt-5 pb-10 scale-110 md:h-auto md:w-80 md:rounded-none md:rounded-s-lg"
                 src="/front_page.png"
                 alt="hi"
-              />
+              /> */}
             </div>
           )}
         </motion.div>

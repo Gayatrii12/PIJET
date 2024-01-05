@@ -36,8 +36,9 @@ const Navbar = () => {
 
   return (
     <div className="z-10 sticky  top-0 md:relative">
-      
+      <div>
       <img src="/header.png" alt="header" border="0" className="mx-auto w-full bg-white " />
+      </div>
       <div className="flex justify-start items-center py-2 md:hidden h-auto  bg-pijet-blue">
         <button className="flex justify-center items-center px-3" onClick={toggleisOpen}>
           <svg
@@ -72,9 +73,9 @@ const Navbar = () => {
         </button>
         <p className="text-white text-center text-xs font-manrope font-medium">{getDisplayName(location.pathname)}</p>
       </div>
-      <div className="navbar-wrapper items-center text-white text-xl justify-center- md:h-auto w-3/5  md:w-full rounded-lg md:rounded-none my-1 mx-2 md:my-0 md:mx-0 p-15 shadow-md sm:text-xs  bg-pijet-blue px-10 ">
-        <div className={"md:h-auto "}>
-          <ul className={(" flex-col space-y-4 md:space-y-0 z-10 md:flex-row md:flex items-center py-5 md:py-3 justify-evenly text-white ")+(isOpen?("flex"):("hidden"))} animate={isOpen ? "open" : "closed"}
+      <div className="navbar-wrapper absolute  md:relative items-center text-white text-xl justify-center- md:h-auto w-3/5  md:w-full rounded-lg md:rounded-none my-1 mx-2 md:my-0 md:mx-0 p-15 shadow-xl md:shadow-md sm:text-xs  bg-pijet-blue px-10 ">
+        <div className={" md:h-auto "}>
+          <ul className={(" flex-col space-y-4 md:space-y-0 z-10  md:flex-row md:flex items-center py-5 md:py-3 justify-evenly text-white ")+(isOpen?("flex"):("hidden"))} animate={isOpen ? "open" : "closed"}
       variants={variants} transition={{ delay: 0.3 }} onClick={toggleisOpen}>
             <NavItem to="/" active={isActive("/")}>
               HOME
