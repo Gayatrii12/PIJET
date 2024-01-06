@@ -26,7 +26,7 @@ const Archive = () => {
       <div className="py-6">
         <h1 className="text-4xl font-bold mb-4 py-8 text-pijet-blue">PRESENT ISSUE</h1>
         <motion.div className="flex-col items-center justify-center mx-auto bg-pijet-blue border text-xl w-4/5 md:w-md border-gray-200 rounded-lg shadow sm:flex-col sm:max-w-md"
-        whileHover={{scale:1.1}}>
+          whileHover={{ scale: 1.1 }}>
           <div
             className="cursor-pointer"
             onClick={toggleExpand}
@@ -43,11 +43,14 @@ const Archive = () => {
           {expanded && (
             <div>
               <div className="flex flex-col justify-between leading-normal">
-                <a href="/Volume1-Issue1-December2023.pdf" className="mb-3 font-normal underline text-white hover:scale-110">
+                <p className="text-white">
+                Read here -{'>'} <a href="/Volume1-Issue1-December2023.pdf" className="mb-3 font-normal underline text-white hover:scale-110">
                     Issue 1 : December 2023
-                </a>
-                {/* Add more issues as needed */}
-                <DropDown paperMap={Vol1_Issue1_paperMap} />
+                  </a>
+                </p>
+                <div className="py-2">
+                  <DropDown paperMap={Vol1_Issue1_paperMap} />
+                </div>
               </div>
               {/* <img
                 className="object-cover mx-auto rounded-t-lg h-96 pt-5 pb-10 scale-110 md:h-auto md:w-80 md:rounded-none md:rounded-s-lg"

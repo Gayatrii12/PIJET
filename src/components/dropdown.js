@@ -48,13 +48,13 @@ const DropDown = ({ paperMap }) => {
   return (
     <div className="relative inline-block text-left">
       <div className="flex items-center justify-center space-x-2 md:space-x-4 mb-3 mx-2 ">
-        <div className="relative">
+        <div className="relative text-base">
           <button
             type="button"
             className="inline-flex bg-white justify-between h-12 w-48 md:w-56 items-center p-2 rounded-md border text-pijet-blue focus:outline-none focus:border-blue-300 overflow-ellipsis"
             onClick={() => document.getElementById('dropdown-menu').classList.toggle('hidden')}
           >
-            <p className="truncate">{selectedPaper || 'Select a paper'}</p>
+            <p className="truncate">{selectedPaper || 'Download individual papers'}</p>
             <svg
               className="w-7 h-7 mx-1 text-gray-700"
               fill="none"
