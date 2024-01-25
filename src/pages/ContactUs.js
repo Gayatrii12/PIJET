@@ -6,10 +6,10 @@ const ContactUs = () => {
     <div className="text-4xl font-bold mb-4 text-center mt-4  text-pijet-blue py-3">
         CONTACT US
     </div>
-    <div className="max-w-7xl mx-auto p-6 my-4 text-justify ring-4 ring-pijet-blue w-3/5 ">
+    <div className="max-w-7xl md:mx-auto p-6 my-4 text-justify ring-4 ring-pijet-blue mx-auto w-11/12 md:w-3/5 ">
       
-      <div className='flex text-xl mb-4'>
-        <div className='w-1/2 px-6 text-pijet-blue'>
+      <div className='flex text-lg md:text-xl mb-4'>
+        <div className='w-1/2 px-1 md:px-6 text-pijet-blue'>
           <strong>Publishing Body:</strong>
         </div>
         <div>
@@ -19,8 +19,8 @@ const ContactUs = () => {
           <p>020-24371101 Ext:104</p>
         </div>
       </div>
-      <div className='flex text-xl mb-4'>
-        <div className='w-1/2 px-6 text-pijet-blue'>
+      <div className='flex text-lg md:text-xl mb-4'>
+        <div className='w-1/2 px-1 md:px-6 text-pijet-blue'>
           <strong>Coordinator:</strong>
         </div>
         <div>
