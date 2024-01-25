@@ -1,6 +1,6 @@
 const Author = ({ authorCount }) => {
     return ( 
-        <>
+        <div className="w-11/12 mx-auto">
         <div className = "bg-pijet-blue mx-auto rounded max-w-lg h-10" >
             <p className = "text-white text-center pt-2" > Author { authorCount } </p>
         </div>
@@ -33,7 +33,7 @@ const Author = ({ authorCount }) => {
             </div>
             </form>
 
-        </>
+        </div>
     );
 }
     

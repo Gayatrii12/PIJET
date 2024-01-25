@@ -56,7 +56,7 @@ const Register = () => {
 
   return (
     <>
-      <div className="marquee">
+      <div className="marquee ">
         <h3 className=" text-pijet-blue text-xl font-bold ">
           Currently, we are not accepting any manuscripts. We will notify you
           once we start accepting manuscripts!
@@ -69,7 +69,7 @@ const Register = () => {
           Submit your manuscript:
         </h2>
       </div>
-      <form className="w-full max-w-lg mx-auto my-8">
+      <form className="w-11/12 max-w-lg mx-auto my-8">
         <div className="flex flex-wrap -mx-3 mb-6 relative">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -168,9 +168,9 @@ const Register = () => {
       </form>
 
       {authors.map((author, index) => (
-        <Author key={author.id} authorCount={index + 1} />
+        <Author key={author.id} authorCount={index + 1}  />
       ))}
-      <form className="w-full max-w-lg mx-auto my-8">
+      <form className="w-11/12 max-w-lg mx-auto my-8">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <button
