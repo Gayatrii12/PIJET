@@ -10,7 +10,7 @@ const ContactUs = () => {
       
       <div className='flex text-lg md:text-xl mb-4'>
         <div className='w-1/2 px-1 md:px-6 text-pijet-blue'>
-          <strong>Publishing Body:</strong>
+          <strong> Issuing/Publishing Body:</strong>
         </div>
         <div>
           <p>Dr. S. T. Gandhe</p>
@@ -27,7 +27,7 @@ const ContactUs = () => {
           <p>Dr. R. C. Jaiswal</p>
           <p>PIJET Journal Coordinator</p>
           <p><a className='text-blue-500' href="mailto:pijet@pict.edu">pijet@pict.edu</a></p>
-          <p>020-24371101 Ext:254</p>
+          <p>020-24371101 Ext:354</p>
         </div>
       </div>
       <div className="col-span-1 text-2xl  text-pijet-blue">

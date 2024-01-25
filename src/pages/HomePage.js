@@ -24,11 +24,11 @@ const HomePage = () => {
                         <li><strong>Open Access Publication</strong></li>
                         <li><strong>Peer Reviewed Journal</strong></li>
                         <li><strong>Bi-Annually Published Issues</strong></li>
-                        <li><strong>Publisher:</strong> Dr. S. T. Gandhe 
-                        <br/> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;  Principal, PICT, Pune.
-                        <br/> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;  <a className='text-blue-500' href="mailto:principal@pict.edu">principal@pict.edu</a>
+                        <li><strong>Issuing/Publishing Body:</strong> <br/> &emsp; Dr. S. T. Gandhe 
+                        <br/>&emsp; Principal, PICT, Pune.
+                        <br/>&emsp; <a className='text-blue-500' href="mailto:principal@pict.edu">principal@pict.edu</a>
                         </li>
-                        <li><strong>Institution: </strong> <Link to="https://www.pict.edu" target="_blank" className="text-blue-500">SCTR's Pune Institute of Computer Technology</Link></li>
+                        <li><strong>Institution/Organization: </strong> <Link to="https://www.pict.edu" target="_blank" className="text-blue-500">SCTR's Pune Institute of Computer Technology</Link></li>
                         <li><strong>Current Issue:</strong> Volume 1 - Issue 1 (<Link to="/archives" className="text-blue-500">View in Archives</Link>)</li>
                         <li><strong>Language:</strong> English</li>
                         <br />
