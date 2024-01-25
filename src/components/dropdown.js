@@ -1,15 +1,44 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DropDown = ({ paperMap }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedPaper, setSelectedPaper] = useState('');
-  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   const handleButtonClick = async () => {
     if (selectedPaper) {
-      // Your download logic here
+      const paperPath = paperMap[selectedPaper];
+
+      if (isMobile) {
+        try {
+          const response = await fetch(process.env.PUBLIC_URL + paperPath);
+          const blob = await response.blob();
+          const url = URL.createObjectURL(blob);
+
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = selectedPaper;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } catch (error) {
+          console.error('Error downloading file:', error);
+        }
+      } else {
+        window.open(process.env.PUBLIC_URL + paperPath, '_blank');
+      }
     }
   };
 
