@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "tailwindcss/tailwind.css";
-import { motion } from "framer-motion";
+
 import Author from "../components/author";
+import "./register.css";
 
 const Register = () => {
   const [authors, setAuthors] = useState([{ id: 1 }]);
@@ -55,12 +56,14 @@ const Register = () => {
 
   return (
     <>
-      <motion.div className="marquee overflow-hidden text-pijet-blue text-xl font-semibold" animate={{ x: ["100%", "-100%"] }}
-        transition={{ repeat: Infinity, duration: 13 , ease: "linear" }}>
-        <div className="inline-block p-2">
-          Currently, we are not accepting any manuscripts. We will notify you once we start accepting manuscripts !
-        </div>
-      </motion.div>
+      <div className="marquee">
+        <h3 className=" text-pijet-blue text-xl font-bold ">
+          Currently, we are not accepting any manuscripts. We will notify you
+          once we start accepting manuscripts!
+        
+        </h3>
+      </div>
+
       <div className="default-text-block main_box_papermsg">
         <h2 className="my-6 text-4xl tracking-tight font-extrabold text-pijet-blue py-10">
           Submit your manuscript:
@@ -162,44 +165,43 @@ const Register = () => {
             )}
           </div>
         </div>
-
       </form>
 
       {authors.map((author, index) => (
         <Author key={author.id} authorCount={index + 1} />
       ))}
       <form className="w-full max-w-lg mx-auto my-8">
-     <div className="flex flex-wrap -mx-3 mb-6">
-  <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-    <button
-      type="button"
-      onClick={removeAuthor}
-      className="text-white bg-red-500 hover:bg-red-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-red-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2 md:mb-0"
-    >
-      Remove Author
-    </button>
-  </div>
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <button
+              type="button"
+              onClick={removeAuthor}
+              className="text-white bg-red-500 hover:bg-red-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-red-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2 md:mb-0"
+            >
+              Remove Author
+            </button>
+          </div>
 
-  <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-    <button
-      type="button"
-      onClick={addAuthor}
-      className="text-white bg-pijet-blue hover:bg-pijet-blue hover:scale-110 focus:ring-2 focus:outline-none focus:ring-blue-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2 md:mb-0"
-    >
-      Add Author {authors.length + 1}
-    </button>
-  </div>
-  <div className="w-full md:w-1/3 px-2 mb-6 md:mb-0">
-    <button
-      type="button"
-      onClick={handleSubmit}
-      className="text-white  bg-green-500  hover:bg-green-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-green-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-8 py-2.5 text-center"
-    >
-      Submit 
-    </button>
-  </div>
-</div>
-</form>
+          <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <button
+              type="button"
+              onClick={addAuthor}
+              className="text-white bg-pijet-blue hover:bg-pijet-blue hover:scale-110 focus:ring-2 focus:outline-none focus:ring-blue-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2 md:mb-0"
+            >
+              Add Author {authors.length + 1}
+            </button>
+          </div>
+          <div className="w-full md:w-1/3 px-2 mb-6 md:mb-0">
+            <button
+              type="button"
+              onClick={handleSubmit}
+              className="text-white  bg-green-500  hover:bg-green-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-green-200 focus:scale-95 font-medium rounded-lg text-sm w-full sm:w-auto px-8 py-2.5 text-center"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
     </>
   );
 };

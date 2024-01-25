@@ -1,73 +1,40 @@
-import React, {useState}  from 'react';
 import 'tailwindcss/tailwind.css';
-import { Link } from "@react-email/link";
 
 const ContactUs = () => {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [query, setQuery] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', { name, email, query });
-  };
-
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-6 text-pijet-blue">CONTACT US</h1>
-      
-      <p className="text-lg text-xl mb-4">
-        Please use this form for general inquiries or management-related problems. For any issues related to manuscripts, please email <Link href="mailto:pijet@pict.edu">pijet@pict.edu</Link> along with your manuscript ID for publication-related queries.
-      </p>
-
-      <form onSubmit={handleSubmit} className="space-y-4 py-5 mx-auto">
-        <div >
-          <label className="block text-lg text-xl text-left font-medium text-gray-700">Name</label>
-          <input
-            type="text"
-            className="mt-1 p-2 w-full border rounded-md"
-            placeholder="Enter your name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block text-lg text-xl text-left font-medium text-gray-700">Email</label>
-          <input
-            type="email"
-            className="mt-1 p-2 w-full border rounded-md"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block text-lg text-xl text-left font-medium text-gray-700">Query</label>
-          <textarea
-            className="mt-1 p-2 w-full border rounded-md"
-            placeholder="Enter your query"
-            rows="4"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            required
-          />
-        </div>
-
-        <button type="submit" className="bg-pijet-blue  text-white p-3 rounded-md hover:bg-pijet-dark-blue hover:scale-110">
-          Submit
-        </button>
-      </form>
-
-      <strong className="text-lg text-2xl mt-6">
-        Get in touch: We are here for you! How can we help?
-      </strong>
+    <>
+    <div className="text-4xl font-bold mb-4 text-center mt-4  text-pijet-blue py-3">
+        CONTACT US
     </div>
+    <div className="max-w-7xl mx-auto p-6 my-4 text-justify ring-4 ring-pijet-blue w-3/5 ">
+      
+      <div className='flex text-xl mb-4'>
+        <div className='w-1/2 px-6 text-pijet-blue'>
+          <strong>Publishing Body:</strong>
+        </div>
+        <div>
+          <p>Dr. S. T. Gandhe</p>
+          <p>Principal, PICT, Pune.</p>
+          <p><a className='text-blue-500' href="mailto:principal@pict.edu">principal@pict.edu</a></p>
+          <p>020-24371101 Ext:104</p>
+        </div>
+      </div>
+      <div className='flex text-xl mb-4'>
+        <div className='w-1/2 px-6 text-pijet-blue'>
+          <strong>Coordinator:</strong>
+        </div>
+        <div>
+          <p>Dr. R. C. Jaiswal</p>
+          <p>PIJET Journal Coordinator</p>
+          <p><a className='text-blue-500' href="mailto:pijet@pict.edu">pijet@pict.edu</a></p>
+          <p>020-24371101 Ext:254</p>
+        </div>
+      </div>
+      <div className="col-span-1 text-2xl  text-pijet-blue">
+        <strong>For any issues related to manuscripts, please email pijet@pict.edu along with your manuscript ID for publication related queries.</strong>
+      </div>
+    </div>
+    </>
   );
 };
 

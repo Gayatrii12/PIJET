@@ -38,7 +38,7 @@ const Guidelines = () => {
                 </div>
 
                 <div className="py-4 text-center">
-                    <p className="underline text-2xl font-bold mb-2"><strong>IMPORTANT: MANUSCRIPT SUBMISSIONS THAT DO NOT ADHERE TO THE SUBMISSION GUIDELINES WILL FACE DESK REJECTION. </strong></p>
+                    <p className="text-2xl font-bold mb-2"><strong><span className='text-red-600'>*</span>IMPORTANT: MANUSCRIPT SUBMISSIONS THAT DO NOT ADHERE TO THE SUBMISSION GUIDELINES WILL FACE DESK REJECTION. </strong></p>
                 </div>
             </div>
 
