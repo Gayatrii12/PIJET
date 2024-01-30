@@ -12,7 +12,7 @@ const HomePage = () => {
                     <img src="/front_page.png" alt="Static" className="w- h-auto border-solid border-2 border-black" />
                 </div>
                 <div className="w-full md:w-1/2 py-4">
-                    <div className="text-xl text-left">
+                    <div className="text-lg text-left">
                         <p className="text-2xl text-pijet-blue pb-2 ">
                             <strong>Journal Particulars:</strong>
                         </p>
@@ -24,9 +24,9 @@ const HomePage = () => {
                         <li><strong>Open Access Publication</strong></li>
                         <li><strong>Peer Reviewed Journal</strong></li>
                         <li><strong>Bi-Annually Published Issues</strong></li>
-                        <li><strong>Issuing/Publishing Body:</strong>
+                        <li><strong>Issuing/Publishing Body/Publisher's Details (Name & Address)</strong>
                             <div className='px-2'>
-                                &emsp; SCTR's Pune Institute of Computer Technology
+                                &emsp; <Link to="https://www.pict.edu" target="_blank" className="text-blue-500">SCTR's Pune Institute of Computer Technology</Link>
                                 <br />&emsp; Survey No-27, Near Trimurti Chowk,
                                 <br />&emsp; Dhankawadi, Pune-411043 (India)
                                 <br />&emsp; Phone No: 24371101 (Ext 104)
@@ -36,8 +36,8 @@ const HomePage = () => {
                             </div>
                         </li>
 
-                        <li><strong>Institution/Organization: </strong> <Link to="https://www.pict.edu" target="_blank" className="text-blue-500">SCTR's Pune Institute of Computer Technology</Link></li>
-                        <li><strong>Current Issue:</strong> Volume 1 - Issue 1 (<Link to="/archives" className="text-blue-500">View in Archives</Link>)</li>
+                        <li><strong>Starting Month & Year of publication:</strong> December 2023</li>
+                        <li><strong>Current Issue:</strong> Volume 1 - Issue 1 (December 2023)(<Link to="/archives" className="text-blue-500">View in Archives</Link>)</li>
                         <li><strong>Language:</strong> English</li>
                         <br />
                         <p><strong>Important Links and Forms:</strong></p>
