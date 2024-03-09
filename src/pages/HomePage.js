@@ -8,7 +8,7 @@ const HomePage = () => {
       <div className="md:flex py-4 ">
         <div className="w-full md:w-1/2  md:pr-4 ">
           <img
-            src="/front_page.png"
+            src="/frontpage_issn.png"
             alt="Static"
             className="w- h-auto border-solid border-2 border-black"
           />
