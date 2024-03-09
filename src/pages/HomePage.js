@@ -179,10 +179,10 @@ const HomePage = () => {
           <br />
           Founded in 1983 by visionary stalwarts - Shri. Gopal Krishna, Shri. N.
           Ramakrishna, and Shri. R. S. Kothavale - PICT has been at the
-          forefront of computer education and research for almost four decades.
-          Furthering its mission of excellence in education and research,
+          forefront of computer education and research for almost four decades. Under the illuminating leadership of Hon. Managing Trustee Mr. R. S. Kothavale and Hon. Secretary Mr. Swastik Sirsikar, PICT stands at the pinnacle of new-age technological education, contributing to cutting-edge advancements at a global scale.
+          Furthering its mission of excellence in academia and multidisciplinary research of international repute,
           Director Dr. P. T. Kulkarni and Principal Dr. S. T. Gandhe stand as
-          the torchbearers of the institution.
+          the torchbearers of the institution. PICT's recognition in national rankings and accreditation, coupled with its dedicated faculty, make it an ideal destination for those aspiring to pursue academic excellence and professional success in the fields of engineering and technology.
         </p>
       </div>
 
