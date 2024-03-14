@@ -38,7 +38,7 @@ const Archive = () => {
           
             <div>
               <div className="flex flex-col justify-between mb-3 leading-normal">
-                <a href="/Volume1-Issue1-December2023.pdf" className="mb-3 font-normal underline text-white hover:scale-110">
+                <a href="/volumes/Volume-1_Issue-1.pdf" className="mb-3 font-normal underline text-white hover:scale-110">
                     Issue 1 : December 2023
                 </a>
                 {/* Add more issues as needed */}

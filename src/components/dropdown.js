@@ -53,7 +53,7 @@ const DropDown = ({ paperMap }) => {
           >
             <p className="truncate">{selectedPaper || 'Select a paper'}</p>
             <svg
-              className={`w-7 h-7 mx-1 text-gray-700 transition-transform ${isOpen ? 'rotate-0' : '-rotate-180'}`}
+              className={`w-7 h-7 mx-1 text-gray-700 transition-transform ${isOpen ? '-rotate-180' : 'rotate-0'}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
