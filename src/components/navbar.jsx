@@ -23,6 +23,7 @@ const Navbar = () => {
     "/ethics-policies": "ETHICS & POLICIES",
     "/contact-us": "CONTACT US",
     "/register": "Submission Form",
+    "/developers": "Developers",
   };
 
   const getDisplayName = (pathname) => {

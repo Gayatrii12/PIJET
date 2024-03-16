@@ -20,7 +20,7 @@ const Archive = () => {
 
 
   return (
-    <div className="py-10 h-100">
+    <div className="py-10 h-[41rem]">
       <div className="py-6">
         <h1 className="text-4xl font-bold mb-4 py-8 text-pijet-blue">PRESENT ISSUE</h1>
         <div className="flex-col items-center justify-center mx-auto bg-pijet-blue border text-xl w-4/5 md:w-md border-gray-200 rounded-lg shadow sm:flex-col sm:max-w-md"
