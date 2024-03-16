@@ -27,8 +27,9 @@ const DCard = ({ imageUrl, name, role, linkedin, github, portfolio }) => {
         )}
         {github && (
           <li className="hover:scale-110 transition-transform ease-in-out">
-            <a
-              href={github}
+            <Link
+              target="_blank"
+              to={github}
               className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300"
             >
               <svg
@@ -44,13 +45,14 @@ const DCard = ({ imageUrl, name, role, linkedin, github, portfolio }) => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </li>
         )}
         {portfolio && (
           <li className="hover:scale-110 transition-transform ease-in-out">
-            <a
-              href={portfolio}
+            <Link
+              target="_blank"
+              to={portfolio}
               className="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white "
             >
               <img
@@ -58,7 +60,7 @@ const DCard = ({ imageUrl, name, role, linkedin, github, portfolio }) => {
                 src="/briefcase.png"
                 alt="portfolio"
               />
-            </a>
+            </Link>
           </li>
         )}
       </ul>
