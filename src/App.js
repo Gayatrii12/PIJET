@@ -1,21 +1,21 @@
-
-import './App.css';
+import "./App.css";
 
 import { ThemeProvider } from "@material-tailwind/react";
-import EthicsAndPolicies from './pages/EthicsAndPolicies';
-import HomePage from './pages/HomePage';
-import Guidelines from './pages/Guidelines';
-import ContactUs from './pages/ContactUs';
-import Navbar from './components/navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Ourteam from './pages/our-team';
-import Archive from './pages/Archive';
-import CallForPapers from './pages/CallForPapers';
-import Register from './pages/Register';
-import NotFound from './pages/NotFound';
+import EthicsAndPolicies from "./pages/EthicsAndPolicies";
+import HomePage from "./pages/HomePage";
+import Guidelines from "./pages/Guidelines";
+import ContactUs from "./pages/ContactUs";
+import Navbar from "./components/navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Ourteam from "./pages/our-team";
+import Archive from "./pages/Archive";
+import CallForPapers from "./pages/CallForPapers";
+import Register from "./pages/Register";
+import NotFound from "./pages/NotFound";
+import Footer from "./components/footer";
+import Developers from "./pages/Developers";
 function App() {
   return (
-
     <div className="App">
       <ThemeProvider>
         <BrowserRouter>
@@ -30,10 +30,11 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/developers" element={<Developers />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </ThemeProvider>
-
     </div>
   );
 }
