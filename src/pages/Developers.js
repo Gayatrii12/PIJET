@@ -87,7 +87,7 @@ const Developers = () => {
       portfolio: "https://asp21k-portfolio.vercel.app/", // Example portfolio link
     },
     {
-      imageUrl: "g.jpeg",
+      imageUrl: "g.jpg",
       name: "Gayatri Sawant",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/gayatri-sawant-115689179/", // Example LinkedIn link
