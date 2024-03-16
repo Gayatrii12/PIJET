@@ -7,7 +7,7 @@ const DCard = ({ imageUrl, name, role, linkedin, github, portfolio }) => {
       <img
         className="mx-auto mb-4 w-36 h-36 rounded-full"
         src={imageUrl}
-        alt={`${name} Avatar`}
+        alt={`${name}`}
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         {name}
@@ -71,7 +71,7 @@ const DCard = ({ imageUrl, name, role, linkedin, github, portfolio }) => {
 const Developers = () => {
   const developersData = [
     {
-      imageUrl: "ay.jpeg",
+      imageUrl: "ayush_gala.jpeg",
       name: "Ayush Gala",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/ayush-gala/", // Example LinkedIn link
@@ -79,7 +79,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/at.JPG",
+      imageUrl: "/atharva_pardeshi.JPG",
       name: "Atharva Pardeshi",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/atharva-pardeshi-01054b237/", // Example LinkedIn link
@@ -87,7 +87,7 @@ const Developers = () => {
       portfolio: "https://asp21k-portfolio.vercel.app/", // Example portfolio link
     },
     {
-      imageUrl: "g.jpg",
+      imageUrl: "gayatri_sawant.jpg",
       name: "Gayatri Sawant",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/gayatri-sawant-115689179/", // Example LinkedIn link
@@ -95,7 +95,7 @@ const Developers = () => {
       portfolio: "https://gayatrisawant.vercel.app/", // Example portfolio link
     },
     {
-      imageUrl: "/r.jpg",
+      imageUrl: "/rucha_rajmane.jpg",
       name: "Rucha Rajmane",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/rucha-rajmane-894689234/", // Example LinkedIn link
