@@ -10,6 +10,9 @@ const Register = () => {
 
   const navigate = useNavigate();
 
+  const API_UPLOAD = '';
+  const API_SUBMIT = '';
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
@@ -26,7 +29,6 @@ const Register = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
 
   const volumesList = [
-    "Volume 1 Issue 1 Dec 2023",
     "Volume 1 Issue 2 Jan 2024",
     // Add more volumes as needed
   ];
