@@ -13,6 +13,7 @@ import Archive from './pages/Archive';
 import CallForPapers from './pages/CallForPapers';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
+import Login from './pages/Login';
 function App() {
   return (
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/archives" element={<Archive />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
