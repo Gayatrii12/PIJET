@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 import "tailwindcss/tailwind.css";
+import { useNavigate } from "react-router-dom";
 
 import Author from "../components/author";
 import "./register.css";
 
 const Register = () => {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/login');
+    } 
+    else {
+      toast.success('Sign in successful!');
+    }
+  }, [navigate]);
+
   const [authors, setAuthors] = useState([{ id: 1 }]);
   const [selectedVolume, setSelectedVolume] = useState("");
   const [paperKeywords, setPaperKeywords] = useState("");
@@ -58,9 +73,7 @@ const Register = () => {
     <>
       <div className="marquee ">
         <h3 className=" text-pijet-blue text-xl font-bold ">
-          Currently, we are not accepting any manuscripts. We will notify you
-          once we start accepting manuscripts!
-        
+          We are only accepting manuscripts for PIJET Volume 1 Issue 2 - Jan 2024.
         </h3>
       </div>
 
@@ -202,6 +215,7 @@ const Register = () => {
           </div>
         </div>
       </form>
+      <Toaster />
     </>
   );
 };

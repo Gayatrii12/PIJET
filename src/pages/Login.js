@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [repassword, setRepassword] = useState('');
@@ -9,9 +13,12 @@ const Login = () => {
   const [organization, setOrganization] = useState('');
   const [isLogin, setIsLogin] = useState(true);
 
+  useEffect(() => {
+    toast.error('Please sign in to register your manuscript!');
+  }, []);
+
   const API_REGISTER = 'https://pijet-backend.onrender.com/user/signup';
   const API_LOGIN = 'https://pijet-backend.onrender.com/user/login';
-
 
   //API for login
   const handleLoginSubmit = async (e) => {
@@ -22,10 +29,20 @@ const Login = () => {
         password
       });
 
-      const data = response.data.data.token;
-      console.log(data);
+      if (response.status === 401) {
+        toast.error('User not found! Check your details')
+      }
+      else if (response.status === 200) {
+        const token = response.data.data.token;
+        localStorage.setItem('token', token);
+        navigate('/register');
+      }
+      else {
+        toast.error('Please check your internet connection and try again.');
+      }
 
     } catch (error) {
+      toast.error('An error occurred! Try again later')
       console.error('Error:', error);
     }
   };
@@ -40,8 +57,24 @@ const Login = () => {
         organization,
         country
       });
-      console.log(response.data);
+
+      const token = response.data.data.token;
+
+      if (response.status === 400) {
+        toast.error('User already exists! Please sign in.')
+      }
+      else if (response.status === 201) {
+        const token = response.data.data.token;
+        localStorage.setItem('token', token);
+        navigate('/register');
+        toast.success('User registered successfully!');
+      }
+      else {
+        toast.error('Please check your internet connection and try again.');
+      }
+
     } catch (error) {
+      toast.error('An error occurred! Try again later')
       console.error('Error:', error);
     }
   };
@@ -156,7 +189,8 @@ const Login = () => {
               </div>
             </div>
           }
-          {isLogin && <div className="flex items-center justify-between">
+
+          {/* {isLogin && <div className="flex items-center justify-between">
             <div className="text-sm">
               <button
                 type="button"
@@ -166,7 +200,7 @@ const Login = () => {
                 Forgot your password?
               </button>
             </div>
-          </div>}
+          </div>} */}
 
           <div>
             <button
@@ -186,6 +220,7 @@ const Login = () => {
           </button>
         </div>
       </div>
+      <Toaster/>
     </div>
   );
 };
