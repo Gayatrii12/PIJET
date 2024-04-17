@@ -85,7 +85,7 @@ const Login = () => {
   };
 
   return (
-    <div className="py-10 flex items-center justify-center bg-blue-50">
+    <div className="py-20 flex items-center justify-center">
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
         <h2 className="text-3xl font-extrabold text-center text-pijet-blue">
           {isLogin ? 'Author sign in' : 'Register as an author'}
