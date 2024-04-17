@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import "tailwindcss/tailwind.css";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 import Author from "../components/author";
 import "./register.css";
@@ -17,7 +18,7 @@ const Register = () => {
     const token = localStorage.getItem('token');
     if (!token) {
       navigate('/login');
-    } 
+    }
     else {
       toast.success('Sign in successful!');
     }
@@ -28,8 +29,9 @@ const Register = () => {
   const [paperKeywords, setPaperKeywords] = useState("");
   const [uploadedFile, setUploadedFile] = useState(null);
 
+  //ideally should come from the backend
   const volumesList = [
-    "Volume 1 Issue 2 Jan 2024",
+    "Volume 1 Issue 2 June 2024",
     // Add more volumes as needed
   ];
 
@@ -51,7 +53,18 @@ const Register = () => {
     setUploadedFile(file);
   };
 
+  const updateAuthorData = (data) => {
+    console.log(data.authorCount);
+    console.log(authors);
+    var authorDataCopy = JSON.parse(JSON.stringify(authors));
+    authorDataCopy[data.authorCount -1 ] = data;
+    
+    setAuthors(authorDataCopy);
+    console.log(authors);
+  };
+
   const handleSubmit = () => {
+
     const formData = {
       selectedVolume,
       paperName: document.getElementById("grid-first-name").value,
@@ -183,7 +196,7 @@ const Register = () => {
       </form>
 
       {authors.map((author, index) => (
-        <Author key={author.id} authorCount={index + 1}  />
+        <Author key={author.id} authorCount={index + 1} getData={updateAuthorData} />
       ))}
       <form className="w-11/12 max-w-lg mx-auto my-8">
         <div className="flex flex-wrap -mx-3 mb-6">

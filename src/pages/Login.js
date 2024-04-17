@@ -58,8 +58,6 @@ const Login = () => {
         country
       });
 
-      const token = response.data.data.token;
-
       if (response.status === 400) {
         toast.error('User already exists! Please sign in.')
       }
