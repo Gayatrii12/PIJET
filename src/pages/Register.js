@@ -11,8 +11,11 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  const API_UPLOAD = '';
-  const API_SUBMIT = '';
+  // const API_UPLOAD = 'https://pijet-backend.onrender.com/submit/';
+  // const API_SUBMIT = 'https://pijet-backend.onrender.com/submit/upload';
+
+  const API_UPLOAD = 'http://localhost:8000/submit/';
+  const API_SUBMIT = 'http://localhost:8000/submit/upload';
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -28,12 +31,22 @@ const Register = () => {
   const [selectedVolume, setSelectedVolume] = useState("");
   const [paperKeywords, setPaperKeywords] = useState("");
   const [uploadedFile, setUploadedFile] = useState(null);
+  const [domain, setDomain] = useState("");
+  const [abstract, setAbstract] = useState("");
+  const [title, setTitle] = useState("");
 
   //ideally should come from the backend
   const volumesList = [
     "Volume 1 Issue 2 June 2024",
     // Add more volumes as needed
   ];
+
+  const domainList = [
+    "Computer Science",
+    "Information Technology",
+    "Electronics and Telecommunication",
+    "Electronics and Electrical"
+  ]
 
   const addAuthor = () => {
     setAuthors((prevAuthors) => [
@@ -49,46 +62,97 @@ const Register = () => {
   };
 
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    setUploadedFile(file);
+    setUploadedFile(e.target.files[0]);
   };
 
   const updateAuthorData = (data) => {
-    console.log(data.authorCount);
+    console.log(data.position);
     console.log(authors);
     var authorDataCopy = JSON.parse(JSON.stringify(authors));
-    authorDataCopy[data.authorCount -1 ] = data;
-    
+    authorDataCopy[data.position - 1] = data;
     setAuthors(authorDataCopy);
     console.log(authors);
   };
 
-  const handleSubmit = () => {
+  // const handleSubmit = () => {
 
-    const formData = {
-      selectedVolume,
-      paperName: document.getElementById("grid-first-name").value,
-      paperKeywords,
-      uploadedFile: uploadedFile ? uploadedFile.name : null,
-      authors,
-    };
+  //   const formData = {
+  //     selectedVolume,
+  //     paperName: document.getElementById("grid-first-name").value,
+  //     paperKeywords,
+  //     uploadedFile: uploadedFile ? uploadedFile.name : null,
+  //     authors,
+  //   };
 
-    // Log the form data as JSON to the console
-    console.log(JSON.stringify(formData));
+  //   // Log the form data as JSON to the console
+  //   console.log(JSON.stringify(formData));
 
-    // Clear the form fields
-    setSelectedVolume("");
-    document.getElementById("grid-first-name").value = "";
-    setPaperKeywords("");
-    setUploadedFile(null);
-    setAuthors([{ id: 1 }]); // Reset to one author
+  //   // Clear the form fields
+  //   setSelectedVolume("");
+  //   document.getElementById("grid-first-name").value = "";
+  //   setPaperKeywords("");
+  //   setUploadedFile(null);
+  //   setAuthors([{ id: 1 }]); // Reset to one author
+  // };
+
+  const handleSubmit = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      var paperDetails = {
+        title: title,
+        abstract: abstract,
+        author_count: authors.length,
+        keywords: paperKeywords,
+        paper_domain: domain,
+        authors:authors
+      }
+
+      const config = {
+        headers : {
+        'Authorization': `Bearer ${token}`
+        }
+      };
+
+      console.log(paperDetails);
+      console.log(uploadedFile);
+      console.log(config);
+
+      const response = await axios.post(API_UPLOAD, paperDetails, config);
+      console.log(response.data);
+
+      //if the registration is successful 
+      if(response.status === 200){
+        const formData = new FormData();
+        formData.append('file',uploadedFile);
+
+        console.log(formData);
+        toast.success('Authors registered! Uploading paper...')
+        const response2 = await axios.post(API_SUBMIT, formData, config);
+        console.log(response2.data);
+
+        //post registration if file upload is successful
+        if(response2.status === 200){
+          toast.success("Paper registration successful!");
+        } 
+        //if file upload is not successful
+        else if(response2.status === 400){
+          toast.error("File upload failed! Try again...");
+        }
+      }
+      else{
+        toast.error("Some error occurred. Please try again!")
+      }
+    } catch (error) {
+      console.error('ERROR: ', error);
+      throw error;
+    }
   };
 
   return (
     <>
       <div className="marquee ">
         <h3 className=" text-pijet-blue text-xl font-bold ">
-          We are only accepting manuscripts for PIJET Volume 1 Issue 2 - Jan 2024.
+          We are only accepting manuscripts for PIJET Volume 1 Issue 2 - June 2024.
         </h3>
       </div>
 
@@ -97,9 +161,10 @@ const Register = () => {
           Submit your manuscript:
         </h2>
       </div>
-      <form className="w-11/12 max-w-lg mx-auto my-8">
+      <form className="w-11/12 max-w-lg mx-auto my-8" encType="multipart/form-data">
         <div className="flex flex-wrap -mx-3 mb-6 relative">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+
+        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="upcoming-volume"
@@ -138,6 +203,47 @@ const Register = () => {
               </div>
             </div>
           </div>
+
+          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="domain-selection"
+            >
+              Domain
+            </label>
+            <div className="relative">
+              <select
+                value={domain}
+                onChange={(e) => setDomain(e.target.value)}
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="domain-selection"
+              >
+                <option value="" disabled>
+                  Select domain
+                </option>
+                {domainList.map((domain, index) => (
+                  <option key={index} value={domain}>
+                    {domain}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                {/* Dropdown Icon */}
+                <svg
+                  className="h-4 w-4 fill-current text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M10 12l-6-6 1.41-1.41L10 9.17l4.59-4.58L16 6z"
+                    clipRule="evenodd"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -150,11 +256,10 @@ const Register = () => {
               id="grid-first-name"
               type="text"
               placeholder="Paper Title"
+              value={title}
+              onChange={(e)=>{setTitle(e.target.value);}}
             />
           </div>
-        </div>
-
-        <div className="flex flex-wrap -mx-3 mb-6 relative">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -171,8 +276,9 @@ const Register = () => {
               onChange={(e) => setPaperKeywords(e.target.value)}
             />
           </div>
-
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-6 relative">
+          <div className="w-full px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="file-upload"
@@ -192,11 +298,25 @@ const Register = () => {
               </p>
             )}
           </div>
+          <div className="w-full py-3 px-3 mb-6 md:mb-0">
+            <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="abstract"
+            >
+              Paper Abstract
+            </label>
+            <textarea
+              id="abstract"
+              className="appearance-none block w-full h-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              value={abstract}
+              onChange={(e) => setAbstract(e.target.value)}
+            />
+          </div>
         </div>
       </form>
 
       {authors.map((author, index) => (
-        <Author key={author.id} authorCount={index + 1} getData={updateAuthorData} />
+        <Author key={author.id} position={index + 1} getData={updateAuthorData} />
       ))}
       <form className="w-11/12 max-w-lg mx-auto my-8">
         <div className="flex flex-wrap -mx-3 mb-6">
