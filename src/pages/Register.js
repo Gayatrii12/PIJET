@@ -97,7 +97,7 @@ const Register = () => {
 
   const handleSubmit = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM2IiwiaWF0IjoxNzEzNDM5NTg1fQ.1UJ_5SJDBio2IRehFqSlpntsZOp42ECov1detASbTgo"
       var paperDetails = {
         title: title,
         abstract: abstract,
@@ -126,8 +126,8 @@ const Register = () => {
 
         const formData = new FormData();
         formData.append('file',uploadedFile);
-        // formData.append('title', title);
-        // formData.append('registrationId', registrationId);
+        formData.append('title', title);
+        formData.append('registrationId', registrationId);
 
         console.log(formData);
 
