@@ -122,10 +122,15 @@ const Register = () => {
 
       //if the registration is successful 
       if(response.status === 200){
+        const registrationId = response.data.registrationId;
+
         const formData = new FormData();
         formData.append('file',uploadedFile);
+        // formData.append('title', title);
+        // formData.append('registrationId', registrationId);
 
         console.log(formData);
+
         toast.success('Authors registered! Uploading paper...')
         const response2 = await axios.post(API_SUBMIT, formData, config);
         console.log(response2.data);
