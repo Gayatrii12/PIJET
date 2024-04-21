@@ -5,9 +5,7 @@ import { Vol1_Issue1_paperMap } from "../data/paperMaps";
 import PaperMap from "../components/PaperMap";
 
 const Archive = () => {
-  // const volumes = [];
-  const keys = Object.keys(Vol1_Issue1_paperMap);
-
+  const data = Object.entries(Vol1_Issue1_paperMap);
 
   return (
     <div className="max-w-7xl mx-auto p-6 text-justify">
@@ -17,7 +15,7 @@ const Archive = () => {
 
       <h1 className="text-3xl font-bold mt-6 text-center text-pijet-blue">
         Present Issue
-      </h1>
+      </h1> 
       <h1 className="text-2xl font-bold my-6 text-center text-pijet-blue">
         Complete Volume 1 Issue 1 : Dec 2023
       </h1>
@@ -29,13 +27,13 @@ const Archive = () => {
           >
             <a
               key={index}
-              href={Vol1_Issue1_paperMap[key]}
-              className="w-full h-full"
+              className="text-black text-lg h- w-full font-sans text-center hover:bg-slate-200 py-1 "
             >
-              {key}
-            </a>
-          </button>
+              {key.substring(0, 50)}
+            </p>
+          </a>
         ))}
+       
       </div>
     </div>
   );
