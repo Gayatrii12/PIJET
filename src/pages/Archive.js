@@ -21,7 +21,7 @@ const Archive = () => {
       <h1 className="text-2xl font-bold my-6 text-center text-pijet-blue">
         Complete Volume 1 Issue 1 : Dec 2023
       </h1>
-      <div className="grid grid-cols-3 gap-0">
+      <div className="grid grid-cols-1">
         {keys.map((key, index) => (
           <button
             key={index}
