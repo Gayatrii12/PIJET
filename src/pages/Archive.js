@@ -21,20 +21,20 @@ const Archive = () => {
       <h1 className="text-2xl font-bold my-6 text-center text-pijet-blue">
         Complete Volume 1 Issue 1 : Dec 2023
       </h1>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-3 gap-0">
         {keys.map((key, index) => (
-          <Link
+          <button
             key={index}
-            to={Vol1_Issue1_paperMap[key]}
-            className="w-full h-full"
+            className="text-black text-lg font-sans text-center py-1 border-2 bg-slate-100 hover:bg-slate-200"
           >
-            <button
+            <a
               key={index}
-              className="text-black text-lg font-sans text-center py-1 border-2 bg-slate-100 hover:bg-slate-200"
+              href={Vol1_Issue1_paperMap[key]}
+              className="w-full h-full"
             >
               {key}
-            </button>
-          </Link>
+            </a>
+          </button>
         ))}
       </div>
     </div>
