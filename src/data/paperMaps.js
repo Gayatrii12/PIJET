@@ -1,7 +1,7 @@
 // paperMaps.js
 
 export const Vol1_Issue1_paperMap = {
-    'Complete Volume 1 Issue 1 : Dec 2023': '/Volume1-Issue1-December2023.pdf',
+    // 'Complete Volume 1 Issue 1 : Dec 2023': '/Volume1-Issue1-December2023.pdf',
     'PIJET-01: Pneumatic end-effector for precise seeding': '/papers/volume-1 issue-1/Final revised paper_Pijet-1.pdf',
     'PIJET-02: Optimizing Single Image Super-resolution and upscaling for resource-constrained computing environments': '/papers/volume-1 issue-1/Final revised paper_Pijet-2.pdf',
     'PIJET-03: Musical Frequency Note Detection': '/papers/volume-1 issue-1/Final revised paper_Pijet-3.pdf',
@@ -17,5 +17,5 @@ export const Vol1_Issue1_paperMap = {
     'PIJET-13: Analysis And Modelling of Universal Buffer Circuit for Guitar Pedals': '/papers/volume-1 issue-1/Final revised paper_Pijet-13.pdf',
     'PIJET-14: Unlocking the Potential of Smart Devices: The Synergy Between Blockchain and IoT using RBM': '/papers/volume-1 issue-1/Final revised paper_Pijet-14.pdf',
     // Add more papers as needed
-  };
+};
   
