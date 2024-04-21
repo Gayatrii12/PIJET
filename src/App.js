@@ -14,6 +14,7 @@ import CallForPapers from './pages/CallForPapers';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
+import Submitted from './pages/Submitted';
 function App() {
   return (
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/submitted/:regId" element={<Submitted />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

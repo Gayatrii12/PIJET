@@ -78,8 +78,7 @@ const Login = () => {
   };
 
   const handleForgotPassword = () => {
-    // Redirect or display forgot password modal
-    console.log('Forgot password clicked');
+    toast.error('Function under maintenance. Kindly contact pijet@pict.edu for assistance!');
   };
 
   return (
@@ -188,7 +187,7 @@ const Login = () => {
             </div>
           }
 
-          {/* {isLogin && <div className="flex items-center justify-between">
+          {isLogin && <div className="flex items-center justify-between">
             <div className="text-sm">
               <button
                 type="button"
@@ -198,7 +197,7 @@ const Login = () => {
                 Forgot your password?
               </button>
             </div>
-          </div>} */}
+          </div>}
 
           <div>
             <button

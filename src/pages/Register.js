@@ -11,11 +11,8 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  // const API_UPLOAD = 'https://pijet-backend.onrender.com/submit/';
-  // const API_SUBMIT = 'https://pijet-backend.onrender.com/submit/upload';
-
-  const API_UPLOAD = 'http://localhost:8000/submit/';
-  const API_SUBMIT = 'http://localhost:8000/submit/upload';
+  const API_UPLOAD = 'https://pijet-backend.onrender.com/submit/';
+  const API_SUBMIT = 'https://pijet-backend.onrender.com/submit/upload';
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -66,86 +63,94 @@ const Register = () => {
   };
 
   const updateAuthorData = (data) => {
-    console.log(data.position);
-    console.log(authors);
     var authorDataCopy = JSON.parse(JSON.stringify(authors));
     authorDataCopy[data.position - 1] = data;
     setAuthors(authorDataCopy);
-    console.log(authors);
   };
 
-  // const handleSubmit = () => {
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
-  //   const formData = {
-  //     selectedVolume,
-  //     paperName: document.getElementById("grid-first-name").value,
-  //     paperKeywords,
-  //     uploadedFile: uploadedFile ? uploadedFile.name : null,
-  //     authors,
-  //   };
-
-  //   // Log the form data as JSON to the console
-  //   console.log(JSON.stringify(formData));
-
-  //   // Clear the form fields
-  //   setSelectedVolume("");
-  //   document.getElementById("grid-first-name").value = "";
-  //   setPaperKeywords("");
-  //   setUploadedFile(null);
-  //   setAuthors([{ id: 1 }]); // Reset to one author
-  // };
+  const validateData = () => {
+    if (
+      selectedVolume !== "" &&
+      paperKeywords !== "" &&
+      uploadedFile !== null &&
+      domain !== "" &&
+      abstract !== "" &&
+      title !== ""
+    ) {
+      for (let author of authors) {
+        if (
+          !author.fname ||
+          !author.lname ||
+          !author.organization ||
+          !author.country ||
+          !author.email ||
+          !isValidEmail(author.email)
+        ) {
+          toast.error("Invalid author details. Please recheck...");
+          return false; // At least one author field is missing or invalid
+        }
+      }
+      return true; // All states are set
+    } else {
+      toast.error("Please fill all relevant fields and upload your manuscript copy.");
+      return false; // At least one state is not set
+    }
+  };
 
   const handleSubmit = async () => {
     try {
-      const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM2IiwiaWF0IjoxNzEzNDM5NTg1fQ.1UJ_5SJDBio2IRehFqSlpntsZOp42ECov1detASbTgo"
-      var paperDetails = {
-        title: title,
-        abstract: abstract,
-        author_count: authors.length,
-        keywords: paperKeywords,
-        paper_domain: domain,
-        authors:authors
-      }
+      const token = localStorage.getItem('token');
+      if (validateData()) {
 
-      const config = {
-        headers : {
-        'Authorization': `Bearer ${token}`
+        toast('Processing your request...');
+
+        var paperDetails = {
+          title: title,
+          abstract: abstract,
+          author_count: authors.length,
+          keywords: paperKeywords,
+          paper_domain: domain,
+          authors: authors
         }
-      };
 
-      console.log(paperDetails);
-      console.log(uploadedFile);
-      console.log(config);
+        const config = {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        };
 
-      const response = await axios.post(API_UPLOAD, paperDetails, config);
-      console.log(response.data);
+        const response = await axios.post(API_UPLOAD, paperDetails, config);
 
-      //if the registration is successful 
-      if(response.status === 200){
-        const registrationId = response.data.registrationId;
+        //if the registration is successful 
+        if (response.status === 200) {
+          const registrationId = response.data.registrationId;
 
-        const formData = new FormData();
-        formData.append('file',uploadedFile);
-        formData.append('title', title);
-        formData.append('registrationId', registrationId);
+          const formData = new FormData();
+          formData.append('file', uploadedFile);
+          formData.append('title', title);
+          formData.append('registrationId', registrationId);
 
-        console.log(formData);
+          toast.success('Authors registered! Uploading paper...')
+          const response2 = await axios.post(API_SUBMIT, formData, config);
 
-        toast.success('Authors registered! Uploading paper...')
-        const response2 = await axios.post(API_SUBMIT, formData, config);
-        console.log(response2.data);
-
-        //post registration if file upload is successful
-        if(response2.status === 200){
-          toast.success("Paper registration successful!");
-        } 
-        //if file upload is not successful
-        else if(response2.status === 400){
-          toast.error("File upload failed! Try again...");
+          //post registration if file upload is successful
+          if (response2.status === 200) {
+            toast.success("Paper registration successful!");
+            navigate(`/submitted/${registrationId}`);
+          }
+          //if file upload is not successful
+          else if (response2.status === 400) {
+            toast.error("File upload failed! Try again...");
+          }
         }
-      }
-      else{
-        toast.error("Some error occurred. Please try again!")
+        else {
+          toast.error("Some error occurred. Please try again!")
+        }
       }
     } catch (error) {
       console.error('ERROR: ', error);
@@ -169,7 +174,7 @@ const Register = () => {
       <form className="w-11/12 max-w-lg mx-auto my-8" encType="multipart/form-data">
         <div className="flex flex-wrap -mx-3 mb-6 relative">
 
-        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="upcoming-volume"
@@ -248,7 +253,7 @@ const Register = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -262,7 +267,7 @@ const Register = () => {
               type="text"
               placeholder="Paper Title"
               value={title}
-              onChange={(e)=>{setTitle(e.target.value);}}
+              onChange={(e) => { setTitle(e.target.value); }}
             />
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
