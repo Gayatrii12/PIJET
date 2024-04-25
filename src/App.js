@@ -15,6 +15,7 @@ import Register from './pages/Register';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Submitted from './pages/Submitted';
+import Developers from './pages/Developers';
 function App() {
   return (
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/submitted/:regId" element={<Submitted />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/developers" element={<Developers />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

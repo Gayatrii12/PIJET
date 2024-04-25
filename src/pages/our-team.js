@@ -1,3 +1,5 @@
+import Footer from "../components/footer";
+
 function Ourteam() {
   return (
     <section className="bg-white">
@@ -250,6 +252,7 @@ function Ourteam() {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 }
