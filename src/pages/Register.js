@@ -169,7 +169,7 @@ const Register = () => {
           2024.
         </h3>
       </div>
-      <div className="w-full flex justify-end pr-20">
+      {/* <div className="w-full flex justify-end pr-20">
         <button className="bg-pijet-blue text-white font-bold py-2 px-4 " onClick={()=>{setIsOpen(!isOpen)}} >
         <svg
           viewBox="0 0 24 24"
@@ -200,7 +200,7 @@ const Register = () => {
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
         </button>  
-      </div>
+      </div> */}
          
 
       <div className="default-text-block main_box_papermsg">
