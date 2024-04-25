@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 import { Vol1_Issue1_paperMap } from "../data/paperMaps";
-import PaperMap from "../components/PaperMap";
+// import PaperMap from "../components/PaperMap";
 
 const Archive = () => {
   // const volumes = [];

@@ -1,26 +1,29 @@
 import React, { useState, useEffect } from "react";
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 import "tailwindcss/tailwind.css";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 
 import Author from "../components/author";
 import "./register.css";
+import Rnavbar from "../components/Register_Navbar";
 
 const Register = () => {
-
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleisOpen = () => {
+    setIsOpen(!isOpen);
+  };
   const navigate = useNavigate();
 
-  const API_UPLOAD = 'https://pijet-backend.onrender.com/submit/';
-  const API_SUBMIT = 'https://pijet-backend.onrender.com/submit/upload';
+  const API_UPLOAD = "https://pijet-backend.onrender.com/submit/";
+  const API_SUBMIT = "https://pijet-backend.onrender.com/submit/upload";
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     if (!token) {
-      navigate('/login');
-    }
-    else {
-      toast.success('Sign in successful!');
+      navigate("/login");
+    } else {
+      toast.success("Sign in successful!");
     }
   }, [navigate]);
 
@@ -42,8 +45,8 @@ const Register = () => {
     "Computer Science",
     "Information Technology",
     "Electronics and Telecommunication",
-    "Electronics and Electrical"
-  ]
+    "Electronics and Electrical",
+  ];
 
   const addAuthor = () => {
     setAuthors((prevAuthors) => [
@@ -97,17 +100,18 @@ const Register = () => {
       }
       return true; // All states are set
     } else {
-      toast.error("Please fill all relevant fields and upload your manuscript copy.");
+      toast.error(
+        "Please fill all relevant fields and upload your manuscript copy."
+      );
       return false; // At least one state is not set
     }
   };
 
   const handleSubmit = async () => {
     try {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem("token");
       if (validateData()) {
-
-        toast('Processing your request...');
+        toast("Processing your request...");
 
         var paperDetails = {
           title: title,
@@ -115,27 +119,27 @@ const Register = () => {
           author_count: authors.length,
           keywords: paperKeywords,
           paper_domain: domain,
-          authors: authors
-        }
+          authors: authors,
+        };
 
         const config = {
           headers: {
-            'Authorization': `Bearer ${token}`
-          }
+            Authorization: `Bearer ${token}`,
+          },
         };
 
         const response = await axios.post(API_UPLOAD, paperDetails, config);
 
-        //if the registration is successful 
+        //if the registration is successful
         if (response.status === 200) {
           const registrationId = response.data.registrationId;
 
           const formData = new FormData();
-          formData.append('file', uploadedFile);
-          formData.append('title', title);
-          formData.append('registrationId', registrationId);
+          formData.append("file", uploadedFile);
+          formData.append("title", title);
+          formData.append("registrationId", registrationId);
 
-          toast.success('Authors registered! Uploading paper...')
+          toast.success("Authors registered! Uploading paper...");
           const response2 = await axios.post(API_SUBMIT, formData, config);
 
           //post registration if file upload is successful
@@ -147,13 +151,12 @@ const Register = () => {
           else if (response2.status === 400) {
             toast.error("File upload failed! Try again...");
           }
-        }
-        else {
-          toast.error("Some error occurred. Please try again!")
+        } else {
+          toast.error("Some error occurred. Please try again!");
         }
       }
     } catch (error) {
-      console.error('ERROR: ', error);
+      console.error("ERROR: ", error);
       throw error;
     }
   };
@@ -162,18 +165,54 @@ const Register = () => {
     <>
       <div className="marquee ">
         <h3 className=" text-pijet-blue text-xl font-bold ">
-          We are only accepting manuscripts for PIJET Volume 1 Issue 2 - June 2024.
+          We are only accepting manuscripts for PIJET Volume 1 Issue 2 - June
+          2024.
         </h3>
       </div>
+      <div className="w-full flex justify-end pr-20">
+        <button className="bg-pijet-blue text-white font-bold py-2 px-4 " onClick={()=>{setIsOpen(!isOpen)}} >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className={isOpen ? "hidden" : "flex"}
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          stroke="#ffffff"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className={isOpen ? "flex" : "hidden"}
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        </button>  
+      </div>
+         
 
       <div className="default-text-block main_box_papermsg">
         <h2 className="my-6 text-4xl tracking-tight font-extrabold text-pijet-blue py-10">
           Submit your manuscript:
         </h2>
       </div>
-      <form className="w-11/12 max-w-lg mx-auto my-8" encType="multipart/form-data">
+      <form
+        className="w-11/12 max-w-lg mx-auto my-8"
+        encType="multipart/form-data"
+      >
         <div className="flex flex-wrap -mx-3 mb-6 relative">
-
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -267,7 +306,9 @@ const Register = () => {
               type="text"
               placeholder="Paper Title"
               value={title}
-              onChange={(e) => { setTitle(e.target.value); }}
+              onChange={(e) => {
+                setTitle(e.target.value);
+              }}
             />
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -326,7 +367,11 @@ const Register = () => {
       </form>
 
       {authors.map((author, index) => (
-        <Author key={author.id} position={index + 1} getData={updateAuthorData} />
+        <Author
+          key={author.id}
+          position={index + 1}
+          getData={updateAuthorData}
+        />
       ))}
       <form className="w-11/12 max-w-lg mx-auto my-8">
         <div className="flex flex-wrap -mx-3 mb-6">
