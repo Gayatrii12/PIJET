@@ -1,73 +1,45 @@
-import React, {useState}  from 'react';
 import 'tailwindcss/tailwind.css';
-import { Link } from "@react-email/link";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [query, setQuery] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', { name, email, query });
-  };
-
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-6 text-pijet-blue">CONTACT US</h1>
-      
-      <p className="text-lg text-xl mb-4">
-        Please use this form for general inquiries or management-related problems. For any issues related to manuscripts, please email <Link href="mailto:pijet@pict.edu">pijet@pict.edu</Link> along with your manuscript ID for publication-related queries.
-      </p>
-
-      <form onSubmit={handleSubmit} className="space-y-4 py-5 mx-auto">
-        <div >
-          <label className="block text-lg text-xl text-left font-medium text-gray-700">Name</label>
-          <input
-            type="text"
-            className="mt-1 p-2 w-full border rounded-md"
-            placeholder="Enter your name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block text-lg text-xl text-left font-medium text-gray-700">Email</label>
-          <input
-            type="email"
-            className="mt-1 p-2 w-full border rounded-md"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block text-lg text-xl text-left font-medium text-gray-700">Query</label>
-          <textarea
-            className="mt-1 p-2 w-full border rounded-md"
-            placeholder="Enter your query"
-            rows="4"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            required
-          />
-        </div>
-
-        <button type="submit" className="bg-pijet-blue  text-white p-3 rounded-md hover:bg-pijet-dark-blue hover:scale-110">
-          Submit
-        </button>
-      </form>
-
-      <strong className="text-lg text-2xl mt-6">
-        Get in touch: We are here for you! How can we help?
-      </strong>
+    <>
+    <div className="text-4xl font-bold mb-4 text-center mt-4  text-pijet-blue py-3">
+        CONTACT US
     </div>
+    <div className="max-w-7xl md:mx-auto p-6 my-4 text-left ring-4 ring-pijet-blue mx-auto w-11/12 md:w-3/5 ">
+      
+      <div className='flex text-lg md:text-xl mb-4'>
+        <div className='w-2/5 px-1 md:px-6 text-pijet-blue'>
+          <strong> Issuing/Publishing Body/Publisher's Details: (Name & Address)</strong>
+        </div>
+        <div className='text-left'>
+          <p><Link to="https://www.pict.edu" target="_blank" className="text-blue-500">SCTR's Pune Institute of Computer Technology</Link></p>
+          <p>Survey No-27, Near Trimurti Chowk,</p>
+          <p>Dhankawadi, Pune-411043 (India)</p>
+          <p>Phone No: 24371101 (Ext: 104)</p>
+          <p>Dr. S. T. Gandhe</p>
+          <p>Principal, PICT, Pune.</p>
+          <p><a className='text-blue-500' href="mailto:principal@pict.edu">principal@pict.edu</a></p>
+          {/* <p>020-24371101 Ext:104</p> */}
+        </div>
+      </div>
+      <div className='flex text-lg md:text-xl mb-4'>
+        <div className='w-2/5 px-1 md:px-6 text-pijet-blue'>
+          <strong>Coordinator:</strong>
+        </div>
+        <div className='text-left'>
+          <p>Dr. R. C. Jaiswal</p>
+          <p>PIJET Journal Coordinator</p>
+          <p><a className='text-blue-500' href="mailto:pijet@pict.edu">pijet@pict.edu</a></p>
+          <p>020-24371101 (Ext: 354)</p>
+        </div>
+      </div>
+      <div className="col-span-1 text-2xl  text-pijet-blue">
+        <strong>For any issues related to manuscripts, please email pijet@pict.edu along with your manuscript ID for publication related queries.</strong>
+      </div>
+    </div>
+    </>
   );
 };
 
