@@ -1,13 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 import { Vol1_Issue1_paperMap } from "../data/paperMaps";
-// import PaperMap from "../components/PaperMap";
 
 const Archive = () => {
-  // const volumes = [];
   const keys = Object.keys(Vol1_Issue1_paperMap);
-
 
   return (
     <div className="max-w-7xl mx-auto p-6 text-justify">
