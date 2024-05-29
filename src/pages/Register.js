@@ -6,7 +6,7 @@ import axios from "axios";
 
 import Author from "../components/author";
 import "./register.css";
-import Rnavbar from "../components/Register_Navbar";
+// import Rnavbar from "../components/Register_Navbar";
 
 const Register = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -167,6 +167,9 @@ const Register = () => {
         <h3 className=" text-pijet-blue text-xl font-bold ">
           We are only accepting manuscripts for PIJET Volume 1 Issue 2 - June
           2024.
+        </h3>
+        <h3 className=" text-pijet-blue text-xl font-bold ">
+          Submit Your Manuscript at <a href="mailto:pijet@pict.edu">pijet@pict.edu</a>
         </h3>
       </div>
       {/* <div className="w-full flex justify-end pr-20">

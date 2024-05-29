@@ -16,6 +16,7 @@ import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Submitted from './pages/Submitted';
 import Developers from './pages/Developers';
+import Accept from './pages/Accept';
 function App() {
   return (
 
@@ -31,7 +32,7 @@ function App() {
             <Route path="/ethics-policies" element={<EthicsAndPolicies />} />
             <Route path="/archives" element={<Archive />} />
             <Route path="/contact-us" element={<ContactUs />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Accept />} />
             <Route path="/login" element={<Login />} />
             <Route path="/submitted/:regId" element={<Submitted />} />
             <Route path="*" element={<NotFound />} />
