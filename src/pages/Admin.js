@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/admin/Sidebar";
 import HeroSection from "../components/admin/HeroSection";
+import FinalStatus from "../components/admin/FinalStatus";
+import Approval from "../components/admin/Approval";
+import Papers from "../components/admin/Papers";
 
 const AdminLayout = () => {
   const navigate = useNavigate();
@@ -31,9 +34,5 @@ const AdminLayout = () => {
     </>
   );
 };
-
-const FinalStatus = () => <div>Final Status</div>;
-const Approval = () => <div>Approval Content</div>;
-const Papers = () => <div>Papers Content</div>;
 
 export default AdminLayout;

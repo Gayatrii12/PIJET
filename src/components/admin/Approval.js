@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FinalStatus = () => {
+const Approval = () => {
   const [query, setQuery] = useState("");
   const data = Array.from({ length: 10 }, (_, index) => ({
     col1: `Data ${index + 1} - 1`,
@@ -19,7 +19,7 @@ const FinalStatus = () => {
 
   return (
     <div className="p-4">
-      <div>Final Status</div>
+      <div>Approval</div>
       <div className="max-w-3xl mx-auto">
         <form className="flex items-center shadow-xl" onSubmit={(e) => e.preventDefault()}>
           <input
@@ -79,4 +79,4 @@ const FinalStatus = () => {
   );
 };
 
-export default FinalStatus;
+export default Approval;
