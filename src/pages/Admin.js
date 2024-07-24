@@ -24,7 +24,7 @@ const AdminLayout = () => {
         <div className="w-1/6 h-screen bg-white-200">
           <Sidebar onSelect={handleSelect} />
         </div>
-        <div className="w-full bg-blue-200">
+        <div className="w-full bg-blue-200 h-full">
           {section === "home" && <HeroSection />}
           {section === "final-status" && <FinalStatus />}
           {section === "approval" && <Approval />}
