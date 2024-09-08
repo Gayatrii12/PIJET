@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import axios from 'axios';
+import { Modal } from './Modal'; // Ensure this path is correct
 
 const Papers = () => {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
+  const [modal, setModal] = useState(false);
 
-  const config = {
+  const config = useMemo(() => ({
     headers: {
       Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMyIiwiaWF0IjoxNzEwNjczNjY4fQ.0JYfX6WHB4teDRNdARq2SLdOPaSBcx-m9apCzLl52Yw`,
     },
     params: {}
-  };
+  }), []);
 
   const viewpdf = async (paperid) => {
     try {
-      const response = await axios.get('https://pijet-backend.onrender.com/admin/getpaperbyid', {
+      const response = await axios.get('http://localhost:5000/admin/getpaperbyid', {
         ...config,
         params: { paperId: paperid }
       });
@@ -24,10 +26,14 @@ const Papers = () => {
     }
   }
 
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://pijet-backend.onrender.com/admin/getallsubmissions', config);
+        const response = await axios.get('http://localhost:5000/admin/getallsubmissions', config);
         setData(response.data.data);
         console.log(response.data.data);
       } catch (error) {
@@ -36,7 +42,7 @@ const Papers = () => {
     };
 
     fetchData();
-  }, []);
+  }, [config]);
 
   // Filter data based on query
   const filteredData = data.filter(row =>
@@ -121,7 +127,7 @@ const Papers = () => {
                     <button onClick={() => viewpdf(row.registration_id)} className="bg-pijet-blue text-white p-1 rounded-lg hover:ring-pijet-blue ring-1 px-2 ease-in-out hover:bg-white hover:text-black">View PDF</button>
                   </td>
                   <td className="px-6 py-4 border border-gray-200 whitespace-nowrap text-sm text-gray-500 text-center">
-                    <button className="ring-pijet-blue ring-1 p-1 px-1 rounded-lg ease-in-out hover:bg-pijet-blue hover:text-white">View Details</button>
+                    <button onClick={toggleModal} className="ring-pijet-blue ring-1 p-1 px-1 rounded-lg ease-in-out hover:bg-pijet-blue hover:text-white">View Details</button>
                   </td>
                 </tr>
               ))}
@@ -129,6 +135,7 @@ const Papers = () => {
           </table>
         </div>
       </div>
+      <Modal showModal={modal} toggleModal={toggleModal} />
     </div>
   );
 };

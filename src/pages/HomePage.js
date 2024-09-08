@@ -72,12 +72,10 @@ const HomePage = () => {
               2023
             </li>
             <li>
-              <strong>Current Issue:</strong> Volume 1 - Issue 1 (December
-              2023)(
+              <strong>Current Issues:</strong> Volume 1 - (Issue-1 & 2){" "} 
               <Link to="/archives" className="text-blue-500">
                 View in Archives
               </Link>
-              )
             </li>
             <li>
               <strong>Language:</strong> English
