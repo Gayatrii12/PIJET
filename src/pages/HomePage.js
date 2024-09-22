@@ -13,7 +13,7 @@ const HomePage = () => {
             className="w- h-auto border-solid border-2 border-black"
           />
         </div>
-        <div className="w-full md:w-1/2 py-4">
+        <div className="w-full md:w-2/3 py-4">
           <div className="text-lg text-left">
             <p className="text-2xl text-pijet-blue pb-2 ">
               <strong>Journal Particulars:</strong>
@@ -72,12 +72,10 @@ const HomePage = () => {
               2023
             </li>
             <li>
-              <strong>Current Issue:</strong> Volume 1 - Issue 1 (December
-              2023)(
+              <strong>Current Issue Published :{" "}</strong>Volume 1-(Issue-1 & Issue-2){" "} 
               <Link to="/archives" className="text-blue-500">
                 View in Archives
               </Link>
-              )
             </li>
             <li>
               <strong>Language:</strong> English
