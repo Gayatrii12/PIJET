@@ -37,7 +37,7 @@ const Register = () => {
 
   //ideally should come from the backend
   const volumesList = [
-    "Volume 1 Issue 2 June 2024",
+    "Volume-2, Issue-1, December-2024",
     // Add more volumes as needed
   ];
 
