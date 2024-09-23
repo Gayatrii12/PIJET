@@ -196,9 +196,9 @@ function Ourteam() {
             <h3 class="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
               Dr. S. K. Moon
             </h3>
-            <p>Associate Prof.</p>
-            <p>Dept. of E&TC Engineering</p>
-            <p>PICT, Pune, India</p>
+            <p>Associate Prof. & Head of</p>
+            <p>Electronics & Computer</p>
+            <p> Engineering PICT, Pune, India</p>
             <p>skmoon@pict.edu</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
