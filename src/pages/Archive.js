@@ -12,9 +12,9 @@ const Archive = () => {
         ARCHIVES
       </h1>
 
-      <h1 className="text-3xl font-bold mt-6 text-center text-pijet-blue">
+      {/* <h1 className="text-3xl font-bold mt-6 text-center text-pijet-blue">
         Present Issue
-      </h1>
+      </h1> */}
       <div>
         <h1 className="text-2xl font-bold my-6 text-center text-pijet-blue">
           Complete Volume 1 Issue 2 : June 2024
