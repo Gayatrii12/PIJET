@@ -62,5 +62,6 @@ export const Vol2_Issue2_paperMap = {
     'PIJET-05: Smart City Exploration: A Review-Based Recommendation System': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-05.pdf',
     'PIJET-06: Using GenAI to Generate Blood Test Report Analysis to Reverse Metabolic Syndrome': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-06.pdf',
     'PIJET-07: Machine Learning and Blockchain Applications in Smart Agriculture': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-07.pdf',
+    'PIJET-08: Bridging Programming Languages: A Comprehensive Survey of Code Translation Techniques': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-08.pdf'
 };
 
