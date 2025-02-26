@@ -44,14 +44,14 @@ export const Vol2_Issue1_paperMap = {
     'PIJET-04: Hybrid Energy-Efficient Routing Protocol (HEERP) for IoT Networks: Enhancing Performance and Energy Efficiency': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-04_done.pdf',
     'PIJET-05: Adversarial Insights: Leveraging GANs for Handwritten Digits': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-05_done.pdf',
     'PIJET-06: AI-Driven Solutions for Enhanced Student Engagement and Teacher Interaction in Online Learning': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-06_done.pdf',
-    'PIJET-07: Comparative Study of Reinforcement Learning Methods: DQN vs PPO in a Game': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-07_done.pdf',
-    'PIJET-08: Human Emotion Detection in Mental Health Monitoring': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-08_done.pdf',
-    'PIJET-09: V-Mail: Bridging the Gap in Communication for the Visually Impaired': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-09_done.pdf',
-    'PIJET-10: Literature Review on Logs Management Dashboard and Real-Time Server Logs Processing': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-10_done.pdf',
-    'PIJET-11: Emotion-Based Music Recommendation System Using Speech Analysis': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-11_done.pdf',
-    'PIJET-12: Traffic Congestion Control Using Ensemble Methods': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-12_done.pdf',
-    'PIJET-13: Leveraging Digital Marketing by Generative AI, Deepfakes, and DRL': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-13_done.pdf',
-    'PIJET-14: Comparative Study on Credit Card Fraud Detection': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-14_done.pdf',
+    'PIJET-07: Comparative Study of Reinforcement Learning Methods: DQN vs PPO in a Game': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-07_Done.pdf',
+    'PIJET-08: Human Emotion Detection in Mental Health Monitoring': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-08_Done.pdf',
+    'PIJET-09: V-Mail: Bridging the Gap in Communication for the Visually Impaired': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-09_Done.pdf',
+    'PIJET-10: Literature Review on Logs Management Dashboard and Real-Time Server Logs Processing': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-10_Done.pdf',
+    'PIJET-11: Emotion-Based Music Recommendation System Using Speech Analysis': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-11_Done.pdf',
+    'PIJET-12: Traffic Congestion Control Using Ensemble Methods': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-12_Done.pdf',
+    'PIJET-13: Leveraging Digital Marketing by Generative AI, Deepfakes, and DRL': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-13_Done.pdf',
+    'PIJET-14: Comparative Study on Credit Card Fraud Detection': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-14_Done.pdf',
 };  
 
 export const Vol2_Issue2_paperMap = {

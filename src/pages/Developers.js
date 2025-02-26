@@ -102,6 +102,46 @@ const Developers = () => {
       github: "https://github.com/rucharajmane", // Example GitHub link
       portfolio: "", // Example portfolio link
     },
+    {
+      imageUrl: "/atharva_dhake.jpeg",
+      name: "Atharva Dhake",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/atharva-dhake-155160258?trk=blended-typeahead", // Example LinkedIn link
+      github: "https://github.com/Atharvadhake1", // Example GitHub link
+      portfolio: "", // Example portfolio link
+    },
+    {
+      imageUrl: "/gaurav_waghmare.jpg",
+      name: "Gaurav Waghmare",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/gaurav-waghmare-b9a656258/", // Example LinkedIn link
+      github: "https://github.com/gauravw66", // Example GitHub link
+      portfolio: "", // Example portfolio link
+    },
+    {
+      imageUrl: "/kshitij_dhake.jpg",
+      name: "Kshitij Dhake",
+      role: "Full Stack Developer",
+      linkedin: "www.linkedin.com/in/kshitijdhake/", // Example LinkedIn link
+      github: "https://github.com/Ksdhake28", // Example GitHub link
+      portfolio: "", // Example portfolio link
+    },
+    {
+      imageUrl: "/ria_narode.jpg",
+      name: "Ria Narode",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/ria-narode/", // Example LinkedIn link
+      github: "https://github.com/rianarode14", // Example GitHub link
+      portfolio: "", // Example portfolio link
+    },
+    {
+      imageUrl: "/tanvi_somani.jpg",
+      name: "Tanvi Somani",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/tanvi-somani-84a989258/", // Example LinkedIn link
+      github: "https://github.com/tanvi-somani-16", // Example GitHub link
+      portfolio: "https://portfolio-tanvi-somanis-projects.vercel.app", // Example portfolio link
+    },
   ];
 
   return (
