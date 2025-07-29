@@ -62,6 +62,20 @@ export const Vol2_Issue2_paperMap = {
     'PIJET-05: Smart City Exploration: A Review-Based Recommendation System': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-05.pdf',
     'PIJET-06: Using GenAI to Generate Blood Test Report Analysis to Reverse Metabolic Syndrome': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-06.pdf',
     'PIJET-07: Machine Learning and Blockchain Applications in Smart Agriculture': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-07.pdf',
-    'PIJET-08: Bridging Programming Languages: A Comprehensive Survey of Code Translation Techniques': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-08.pdf'
+    'PIJET-08: Bridging Programming Languages: A Comprehensive Survey of Code Translation Techniques': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-08.pdf',
+    'PIJET-09: Sentiment Analysis: A Comparative Study Over Different Social Media Platforms': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-09.pdf',
+    'PIJET-10: Hybrid Multi-Modal Explainable Cyberbullying Detection System': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-10.pdf',
+    'PIJET-11: Personalized Newsletter Application': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-11.pdf',
+    'PIJET-12: Revolutionizing E-Commerce: Enhancing Product Visualization through 3D Rendering and Augmented Reality': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-12.pdf',
+    'PIJET-13: AI-Powered Video Authenticity Verification using CNN with Vision Transformer': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-13.pdf',
+    'PIJET-14: Human Posture Analysis and Correction': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-14.pdf'
+};
+
+export const Vol3_Issue1_paperMap={
+    'PIJET-01: Cloud Auditing Tools and Platforms: The Kloudraksha Approach': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-01_Dec25.pdf',
+    'PIJET-02: Query-Based Video Summarizer': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-02_Dec25.pdf',
+    'PIJET-03: Buffer Overflow: A Controlled Exploit': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-03_Dec25.pdf',
+    'PIJET-04: A Comphrehensive Survey on Credit Card Fraud Detection using Advanced Deep Learning': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-04_Dec25.pdf',
+    'PIJET-05: Design and Implementation of a 5G in a Box Solution': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-05_Dec25.pdf'
 };
 
