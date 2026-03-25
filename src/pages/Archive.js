@@ -19,7 +19,7 @@ const Archive = () => {
         Present Issue
       </h1> */}
       <div>
-        <h1 className="text-2xl font-bold my-6 text-center text-pijet-black">
+        <h1 className="text-2xl font-bold my-6 text-center text-pijet-blue">
           Volume 3 Issue 1 : December 2025 (In Progress)
         </h1>
         <div className="grid grid-cols-1">
@@ -41,7 +41,7 @@ const Archive = () => {
       </div>
 
       <div>
-        <h1 className="text-2xl font-bold my-6 text-center text-pijet-black">
+        <h1 className="text-2xl font-bold my-6 text-center text-pijet-blue">
           Volume 2 Issue 2 : June 2025
         </h1>
         <div className="grid grid-cols-1">

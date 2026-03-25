@@ -76,6 +76,16 @@ export const Vol3_Issue1_paperMap={
     'PIJET-02: Query-Based Video Summarizer': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-02_Dec25.pdf',
     'PIJET-03: Buffer Overflow: A Controlled Exploit': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-03_Dec25.pdf',
     'PIJET-04: A Comphrehensive Survey on Credit Card Fraud Detection using Advanced Deep Learning': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-04_Dec25.pdf',
-    'PIJET-05: Design and Implementation of a 5G in a Box Solution': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-05_Dec25.pdf'
+    'PIJET-05: Design and Implementation of a 5G in a Box Solution': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-05_Dec25.pdf',
+    'PIJET-06: Stock Market Prediction with Machine Learning: A Regime-Aware Hybrid Transformer Framework': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-06_Dec25.pdf',
+    'PIJET-07: Handwriting Recognition Framework for Academic Integrity Using BiLSTM and Capsule Networks': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-07_Dec25.pdf',
+    'PIJET-08: Bridging the Lexical Semantic Gap: A Comprehensive Review of Hybrid Information Retrieval': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-08_Dec25.pdf',
+    'PIJET-09: Natural Language to SQL Interfaces for Databases': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-09_Dec25.pdf',
+    'PIJET-10: Fairness to Footprint: A Comprehensive Audit Framework for Sustainable AI Systems': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-10_Dec25.pdf',
+    'PIJET-11: Fine-Tuned Transformers for Robust Multidomain Sentiment Detection': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-11_Dec25.pdf',
+    'PIJET-12: AI-Enhanced Travel Experience and Community Travel Posts': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-12_Dec25.pdf',
+    'PIJET-13: AI-Driven Supply Chain Optimization with Real-Time Analytics and Decision Support': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-13_Dec25.pdf',
+    'PIJET-14: Comparative Analysis of Python Frameworks for Digital Audio & Music Processing': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-14_Dec25.pdf',
+
 };
 
