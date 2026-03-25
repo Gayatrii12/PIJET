@@ -8,13 +8,13 @@ const HomePage = () => {
       <div className="md:flex py-4 ">
         <div className="w-full md:w-1/2  md:pr-4 ">
           <img
-            src="/front.png"
+            src="/PIJET FLYER.png"
             alt="Static"
             className="w- h-auto border-solid border-2 border-black"
           />
         </div>
         <div className="w-full md:w-2/3 py-4">
-          <div className="text-lg text-left">
+          <div className="text-lg text-left pl-4">
             <p className="text-2xl text-pijet-blue pb-2 ">
               <strong>Journal Particulars:</strong>
             </p>
@@ -72,7 +72,7 @@ const HomePage = () => {
               2023
             </li>
             <li>
-              <strong>Current Issue Published :{" "}</strong>Volume 3 Issue-1{" "}(December: 2025){" "} 
+              <strong>Current Issue Published :{" "}</strong>Volume 3 Issue-2{" "}(June: 2026){" "} 
               <Link to="/archives" className="text-blue-500">
                 View in Archives
               </Link>
