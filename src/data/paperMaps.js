@@ -52,7 +52,7 @@ export const Vol2_Issue1_paperMap = {
     'PIJET-12: Traffic Congestion Control Using Ensemble Methods': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-12_Done.pdf',
     'PIJET-13: Leveraging Digital Marketing by Generative AI, Deepfakes, and DRL': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-13_Done.pdf',
     'PIJET-14: Comparative Study on Credit Card Fraud Detection': '/papers/volume-2 issue-1/Final Revised Paper_Pijet-14_Done.pdf',
-};  
+};
 
 export const Vol2_Issue2_paperMap = {
     'PIJET-01: Swift Storage: A Temporary Storage Solution for Day-to-Day File Transfers': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-01.pdf',
@@ -71,7 +71,7 @@ export const Vol2_Issue2_paperMap = {
     'PIJET-14: Human Posture Analysis and Correction': '/papers/volume-2 issue-2/Final Revised Paper_Pijet-14.pdf'
 };
 
-export const Vol3_Issue1_paperMap={
+export const Vol3_Issue1_paperMap = {
     'PIJET-01: Cloud Auditing Tools and Platforms: The Kloudraksha Approach': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-01_Dec25.pdf',
     'PIJET-02: Query-Based Video Summarizer': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-02_Dec25.pdf',
     'PIJET-03: Buffer Overflow: A Controlled Exploit': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-03_Dec25.pdf',
@@ -87,5 +87,14 @@ export const Vol3_Issue1_paperMap={
     'PIJET-13: AI-Driven Supply Chain Optimization with Real-Time Analytics and Decision Support': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-13_Dec25.pdf',
     'PIJET-14: Comparative Analysis of Python Frameworks for Digital Audio & Music Processing': '/papers/volume-3 issue-1/Final Revised Paper_Pijet-14_Dec25.pdf',
 
+};
+
+export const Vol3_Issue2_paperMap = {
+    'PIJET-01: A Comprehensive Framework for Medical Deepfake Detection Using CNN and Web Integration': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-01_June26.pdf',
+    'PIJET-02: A Robust and Interpretable Multimodal Deepfake Detection Framework': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-02_June26.pdf',
+    'PIJET-03: Decision-Driven Feature Flag Management for Progressive Microservice Rollouts': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-03_June26.pdf',
+    'PIJET-04: Green Agent Analytics: Optimizing Continuous ML Pipelines via Provenance-Based Graphlet Prediction and Cooperative Verification': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-04_June26.pdf',
+    'PIJET-05: A Hierarchical Routing and Mesh-Based Communication Approach in WSN for IoT Applications': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-05_June26.pdf',
+    'PIJET-06: USB Rubber Ducky for Reverse Shell Attacks': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-06_June26.pdf',
 };
 
