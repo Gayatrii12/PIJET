@@ -142,6 +142,28 @@ const Developers = () => {
       github: "https://github.com/tanvi-somani-16", // Example GitHub link
       portfolio: "https://portfolio-tanvi-somanis-projects.vercel.app", // Example portfolio link
     },
+    {
+      imageUrl: "/manas_yeola.jpg",
+      name: "Manas Yeola",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/manas-yeola/", // Example LinkedIn link
+      github: "https://github.com/ManasYeola", // Example GitHub link
+      portfolio: "https://manas-yeola-portfoliowebsite.vercel.app/", // Example portfolio link
+    },
+    {
+      imageUrl: "/aditya_tidake.jpeg",
+      name: "Aditya Tidake",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/aditya-tidake-977504292/", // Example LinkedIn link
+      github: "https://github.com/AdityaTidake", // Example GitHub link
+    },
+    {
+      imageUrl: "/ayan_pathan.jpeg",
+      name: "Ayan Pathan",
+      role: "Full Stack Developer",
+      linkedin: "https://www.linkedin.com/in/ayan-pathan-67705a285/", // Example LinkedIn link
+      github: "https://github.com/ayan0211", // Example GitHub link
+    },
   ];
 
   return (
