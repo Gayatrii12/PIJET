@@ -99,5 +99,9 @@ export const Vol3_Issue2_paperMap = {
     'PIJET-07: Harmony in Motion: A Music-Integrated Therapeutic Exercise Framework Leveraging Acoustic-Inference Neural Beat Synchronization': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-07_June26.pdf',
     'PIJET-08: A Hybrid ImLN-Bi-LSTM Framework for Spatio-Temporal Student Engagement Prediction in Surveillance Based Offline Classrooms': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-08_June26.pdf',
     'PIJET-09: A Domain-Specific, Culturally-Aware E-Commerce Platform for Metal and Utensil Retail Using the Festival Seasonal Demand Propagation (FSDP)': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-09_June26.pdf',
+    'PIJET-10: Leveraging Generative AI for Realistic Interview Simulation': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-10_June26.pdf',
+    'PIJET-11: Multi-Modal Online Proctoring: A Survey on Fusion of Head Pose, Gaze, Object Detection, and Audio Forensics': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-11_June26.pdf',
+    'PIJET-12: AudioPy: Bridging Audio Editing and Machine Learning through a Unified Open-Source Framework': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-12_June26.pdf'
 };
+
 
