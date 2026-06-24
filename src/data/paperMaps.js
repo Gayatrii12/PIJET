@@ -96,5 +96,8 @@ export const Vol3_Issue2_paperMap = {
     'PIJET-04: Green Agent Analytics: Optimizing Continuous ML Pipelines via Provenance-Based Graphlet Prediction and Cooperative Verification': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-04_June26.pdf',
     'PIJET-05: A Hierarchical Routing and Mesh-Based Communication Approach in WSN for IoT Applications': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-05_June26.pdf',
     'PIJET-06: USB Rubber Ducky for Reverse Shell Attacks': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-06_June26.pdf',
+    'PIJET-07: Harmony in Motion: A Music-Integrated Therapeutic Exercise Framework Leveraging Acoustic-Inference Neural Beat Synchronization': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-07_June26.pdf',
+    'PIJET-08: A Hybrid ImLN-Bi-LSTM Framework for Spatio-Temporal Student Engagement Prediction in Surveillance Based Offline Classrooms': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-08_June26.pdf',
+    'PIJET-09: A Domain-Specific, Culturally-Aware E-Commerce Platform for Metal and Utensil Retail Using the Festival Seasonal Demand Propagation (FSDP)': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-09_June26.pdf',
 };
 
