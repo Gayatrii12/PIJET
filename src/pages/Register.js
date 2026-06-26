@@ -165,8 +165,8 @@ const Register = () => {
     <>
       <div className="marquee ">
         <h3 className=" text-pijet-blue text-xl font-bold ">
-          We are only accepting manuscripts for PIJET Volume 1 Issue 2 - June
-          2024.
+          We are only accepting manuscripts for PIJET Volume 4 Issue 1 - June
+          2026.
         </h3>
         <h3 className=" text-pijet-blue text-xl font-bold ">
           Submit Your Manuscript at <a href="mailto:pijet@pict.edu">pijet@pict.edu</a>
