@@ -101,7 +101,10 @@ export const Vol3_Issue2_paperMap = {
     'PIJET-09: A Domain-Specific, Culturally-Aware E-Commerce Platform for Metal and Utensil Retail Using the Festival Seasonal Demand Propagation (FSDP)': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-09_June26.pdf',
     'PIJET-10: Leveraging Generative AI for Realistic Interview Simulation': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-10_June26.pdf',
     'PIJET-11: Multi-Modal Online Proctoring: A Survey on Fusion of Head Pose, Gaze, Object Detection, and Audio Forensics': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-11_June26.pdf',
-    'PIJET-12: AudioPy: Bridging Audio Editing and Machine Learning through a Unified Open-Source Framework': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-12_June26.pdf'
+    'PIJET-12: AudioPy: Bridging Audio Editing and Machine Learning through a Unified Open-Source Framework': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-12_June26.pdf',
+    'PIJET-13: Traffic Flow Detection and Adaptive Signal Control Using CCTV Imagery': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-13_June26.pdf',
+    'PIJET-14: AI-Based Text Simplification System for Improving Accessibility in Digital Content': '/papers/volume-3 issue-2/Final Revised Paper_Pijet-14_June26.pdf'
+
 };
 
 
