@@ -52,8 +52,7 @@ const Accept = () => {
   return (
     <div className="my-24">
       <h3 className="text-pijet-blue text-4xl font-bold">
-        We are only accepting manuscripts for PIJET Volume 1 Issue 2 - June
-        2024.
+        We are only accepting manuscripts for PIJET Volume 4 Issue 1 - December 2026
       </h3>
       <h3 className="text-pijet-blue text-4xl font-bold my-8">
         Submit Your Manuscript at{" "}
