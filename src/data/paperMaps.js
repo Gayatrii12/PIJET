@@ -107,4 +107,11 @@ export const Vol3_Issue2_paperMap = {
 
 };
 
+export const Vol4_Issue1_paperMap = {
+    'PIJET-01: Mitigating Cultural Debt in Agent-Dominant Structures: A Formal Sociotechnical Framework for Institutional Resilience in the Age of Autonomous AI': '/papers/volume-4 issue-1/Final Revised Paper_Pijet-01_Dec26.pdf',
+    'PIJET-02: Visible Light Communication (Li-Fi): A dual approach combining review and experimental prototype': '/papers/volume-4 issue-1/Final Revised Paper_Pijet-02_Dec26.pdf',
+    'PIJET-03: A Comprehensive Context-Aware Approach for Marathi Text Simplification using NLP and Machine Learning': '/papers/volume-4 issue-1/Final Revised Paper_Pijet-03_Dec26.pdf',
+
+};
+
 
