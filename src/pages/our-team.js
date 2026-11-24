@@ -12,7 +12,7 @@ function Ourteam() {
         <div className="text-center text-gray-500 dark:text-gray-400">
           <img
             className="mx-auto mb-4 w-36 h-36 rounded-full"
-            src="/DrSTGandhe.jpg"
+            src="/Editorial_Board_Photos/DrSTGandhe.jpg"
             alt="Dr. S. T. Gandhe"
           />
           <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -32,7 +32,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrAGKeskar.jpg"
+              src="/Editorial_Board_Photos/DrAGKeskar.jpg"
               alt="Dr. A. G. Keskar"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -45,7 +45,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrManeshKokare.jpeg"
+              src="/Editorial_Board_Photos/DrManeshKokare.jpeg"
               alt="Dr. M. B. Kokare"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -58,7 +58,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrMaheshkumarKolekar.jpeg"
+              src="/Editorial_Board_Photos/DrMaheshkumarKolekar.jpeg"
               alt="Dr. M. H. Kolekar"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -71,7 +71,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrNupoorRanade.jpg"
+              src="/Editorial_Board_Photos/DrNupoorRanade.jpg"
               alt="Dr. Nupoor Ranade"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -84,7 +84,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DROGKakade.jpg"
+              src="/Editorial_Board_Photos/DROGKakade.jpg"
               alt="Dr. O. G. Kakade"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -97,7 +97,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/DrRadhikaJain.jpg"
+              src="/Editorial_Board_Photos/DrRadhikaJain.jpg"
               alt="Dr. Radhika Jain"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">
@@ -247,7 +247,7 @@ function Ourteam() {
           <div className="text-center text-gray-500 dark:text-gray-400">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src="/Coordinators1.jpeg"
+              src="/Editorial_Board_Photos/Coordinators1.jpeg"
               alt="Dr. R. C. Jaiswal"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-pijet-blue">

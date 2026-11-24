@@ -15,8 +15,8 @@ const Register = () => {
   };
   const navigate = useNavigate();
 
-  const API_UPLOAD = "https://pijet-backend.onrender.com/submit/";
-  const API_SUBMIT = "https://pijet-backend.onrender.com/submit/upload";
+  const API_REGISTER_PAPER = "https://pijet-backend.onrender.com/submit/";
+  const API_UPLOAD_FILE = "https://pijet-backend.onrender.com/submit/upload";
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -128,7 +128,7 @@ const Register = () => {
           },
         };
 
-        const response = await axios.post(API_UPLOAD, paperDetails, config);
+        const response = await axios.post(API_REGISTER_PAPER, paperDetails, config);
 
         //if the registration is successful
         if (response.status === 200) {
@@ -140,7 +140,7 @@ const Register = () => {
           formData.append("registrationId", registrationId);
 
           toast.success("Authors registered! Uploading paper...");
-          const response2 = await axios.post(API_SUBMIT, formData, config);
+          const response2 = await axios.post(API_UPLOAD_FILE, formData, config);
 
           //post registration if file upload is successful
           if (response2.status === 200) {

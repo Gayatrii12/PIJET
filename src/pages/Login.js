@@ -29,10 +29,7 @@ const Login = () => {
         password
       });
 
-      if (response.status === 401) {
-        toast.error('User not found! Check your details')
-      }
-      else if (response.status === 200) {
+      if (response.status === 200) {
         const token = response.data.data.token;
         localStorage.setItem('token', token);
         navigate('/register');
@@ -42,7 +39,12 @@ const Login = () => {
       }
 
     } catch (error) {
-      toast.error('An error occurred! Try again later')
+      // Axios throws an error for 4xx and 5xx codes
+      if (error.response && error.response.status === 401) {
+        toast.error('User not found! Check your details');
+      } else {
+        toast.error('An error occurred! Try again later');
+      }
       console.error('Error:', error);
     }
   };
@@ -50,6 +52,10 @@ const Login = () => {
   //API for register
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
+    if (password !== repassword) {
+      toast.error('Passwords do not match! Enter the same password in both fields.');
+      return;
+    }
     try {
       const response = await axios.post(API_REGISTER, {
         email,
@@ -58,10 +64,7 @@ const Login = () => {
         country
       });
 
-      if (response.status === 400) {
-        toast.error('User already exists! Please sign in.')
-      }
-      else if (response.status === 201) {
+      if (response.status === 201) {
         const token = response.data.data.token;
         localStorage.setItem('token', token);
         navigate('/register');
@@ -72,7 +75,12 @@ const Login = () => {
       }
 
     } catch (error) {
-      toast.error('An error occurred! Try again later')
+      // Axios throws an error for 4xx and 5xx codes
+      if (error.response && error.response.status === 400) {
+        toast.error('User already exists! Please sign in.');
+      } else {
+        toast.error('An error occurred! Try again later');
+      }
       console.error('Error:', error);
     }
   };

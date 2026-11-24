@@ -2,6 +2,9 @@ import React, { useEffect, useState, useMemo } from "react";
 import axios from 'axios';
 import { Modal } from './Modal'; // Ensure this path is correct
 
+const API_BASE =
+  process.env.REACT_APP_API_URL || 'https://pijet-backend.onrender.com';
+
 const Papers = () => {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
@@ -9,14 +12,14 @@ const Papers = () => {
 
   const config = useMemo(() => ({
     headers: {
-      Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMyIiwiaWF0IjoxNzEwNjczNjY4fQ.0JYfX6WHB4teDRNdARq2SLdOPaSBcx-m9apCzLl52Yw`,
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
     params: {}
   }), []);
 
   const viewpdf = async (paperid) => {
     try {
-      const response = await axios.get('http://localhost:5000/admin/getpaperbyid', {
+      const response = await axios.get(`${API_BASE}/admin/getpaperbyid`, {
         ...config,
         params: { paperId: paperid }
       });
@@ -33,7 +36,7 @@ const Papers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/admin/getallsubmissions', config);
+        const response = await axios.get(`${API_BASE}/admin/getallsubmissions`, config);
         setData(response.data.data);
         console.log(response.data.data);
       } catch (error) {

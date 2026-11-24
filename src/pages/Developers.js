@@ -71,7 +71,7 @@ const DCard = ({ imageUrl, name, role, linkedin, github, portfolio }) => {
 const Developers = () => {
   const developersData = [
     {
-      imageUrl: "ayush_gala.jpeg",
+      imageUrl: "/PIJET_Tech_Team_Photos/ayush_gala.jpeg",
       name: "Ayush Gala",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/ayush-gala/", // Example LinkedIn link
@@ -79,7 +79,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/atharva_pardeshi.JPG",
+      imageUrl: "/PIJET_Tech_Team_Photos/atharva_pardeshi.JPG",
       name: "Atharva Pardeshi",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/atharva-pardeshi-01054b237/", // Example LinkedIn link
@@ -87,7 +87,7 @@ const Developers = () => {
       portfolio: "https://asp21k-portfolio.vercel.app/", // Example portfolio link
     },
     {
-      imageUrl: "gayatri_sawant.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/gayatri_sawant.jpg",
       name: "Gayatri Sawant",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/gayatri-sawant-115689179/", // Example LinkedIn link
@@ -95,7 +95,7 @@ const Developers = () => {
       portfolio: "https://gayatrisawant.vercel.app/", // Example portfolio link
     },
     {
-      imageUrl: "/rucha_rajmane.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/rucha_rajmane.jpg",
       name: "Rucha Rajmane",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/rucha-rajmane-894689234/", // Example LinkedIn link
@@ -103,7 +103,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/atharva_dhake.jpeg",
+      imageUrl: "/PIJET_Tech_Team_Photos/atharva_dhake.jpeg",
       name: "Atharva Dhake",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/atharva-dhake-155160258?trk=blended-typeahead", // Example LinkedIn link
@@ -111,7 +111,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/gaurav_waghmare.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/gaurav_waghmare.jpg",
       name: "Gaurav Waghmare",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/gaurav-waghmare-b9a656258/", // Example LinkedIn link
@@ -119,7 +119,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/kshitij_dhake.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/kshitij_dhake.jpg",
       name: "Kshitij Dhake",
       role: "Full Stack Developer",
       linkedin: "www.linkedin.com/in/kshitijdhake/", // Example LinkedIn link
@@ -127,7 +127,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/ria_narode.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/ria_narode.jpg",
       name: "Ria Narode",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/ria-narode/", // Example LinkedIn link
@@ -135,7 +135,7 @@ const Developers = () => {
       portfolio: "", // Example portfolio link
     },
     {
-      imageUrl: "/tanvi_somani.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/tanvi_somani.jpg",
       name: "Tanvi Somani",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/tanvi-somani-84a989258/", // Example LinkedIn link
@@ -143,7 +143,7 @@ const Developers = () => {
       portfolio: "https://portfolio-tanvi-somanis-projects.vercel.app", // Example portfolio link
     },
     {
-      imageUrl: "/manas_yeola.jpg",
+      imageUrl: "/PIJET_Tech_Team_Photos/manas_yeola.jpg",
       name: "Manas Yeola",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/manas-yeola/", // Example LinkedIn link
@@ -151,14 +151,14 @@ const Developers = () => {
       portfolio: "https://manas-yeola-portfoliowebsite.vercel.app/", // Example portfolio link
     },
     {
-      imageUrl: "/aditya_tidake.jpeg",
+      imageUrl: "/PIJET_Tech_Team_Photos/aditya_tidake.jpeg",
       name: "Aditya Tidake",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/aditya-tidake-977504292/", // Example LinkedIn link
       github: "https://github.com/AdityaTidake", // Example GitHub link
     },
     {
-      imageUrl: "/ayan_pathan.jpeg",
+      imageUrl: "/PIJET_Tech_Team_Photos/ayan_pathan.jpeg",
       name: "Ayan Pathan",
       role: "Full Stack Developer",
       linkedin: "https://www.linkedin.com/in/ayan-pathan-67705a285/", // Example LinkedIn link

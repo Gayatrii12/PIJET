@@ -34,7 +34,7 @@ function App() {
             <Route path="/register" element={<Accept />} />
             <Route path="/login" element={<Login />} />
             <Route path="/submitted/:regId" element={<Submitted />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
             <Route path="/developers" element={<Developers />} />
             <Route path="/admin" element={<AdminLayout />} />
           </Routes>
